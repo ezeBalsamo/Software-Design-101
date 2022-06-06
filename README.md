@@ -6,7 +6,7 @@ A website for beginning (and not so) developers to learn about frontend, backend
 
 [![Markdown Lint](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml)
 
-This website is and its development have an educational purpose, guided by Coderhouse's [Web Development](https://www.coderhouse.com/online/desarrollo-web-online) course.
+This website and its development have an educational purpose, guided by Coderhouse's [Web Development](https://www.coderhouse.com/online/desarrollo-web-online) course.
 
 ## Quick links
 
