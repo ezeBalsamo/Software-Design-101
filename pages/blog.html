@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Design 101 - For beginners and not so much</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
-    <main>
-        <nav>
+    <main class="main_content">
+        <nav class="navigation_bar">
             <a href="../index.html">
-                <img src="../assets/img/software-design-101-logo.png" alt="Software Design 101 Logo" width="200px" />
+                <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.png"
+                    alt="Software Design 101 Logo" width="200px" />
             </a>
-            <ul>
+            <ul class="navigation_bar__options">
                 <li><a href="lessons.html">Lessons</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
@@ -25,7 +27,7 @@
         </nav>
         <!-- ends nav -->
         <header>
-            <img src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
+            <img class="main_image" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
             <h1>Articles</h1>
         </header>
         <!-- ends header -->
@@ -111,25 +113,28 @@
         </section>
     </main>
     <footer>
-        <p>© 2022 Software Design 101</p>
         <div>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="../assets/img/facebook-logo.png" alt="Link to Facebook" width="100px" />
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="../assets/img/instagram-logo.webp" alt="Link to Instagram" width="100px" />
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="../assets/img/twitter-logo.webp" alt="Link to Twitter" width="100px" />
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="../assets/img/youtube-logo.png" alt="Link to Youtube" width="100px" />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <img src="../assets/img/linkedin-logo.png" alt="Link to LinkedIn" width="100px" />
-            </a>
+            <p class="copyright">© 2022 Software Design 101</p>
+            <div class="social_networks">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/facebook-logo.png" alt="Link to Facebook" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/instagram-logo.webp"
+                        alt="Link to Instagram" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/twitter-logo.webp" alt="Link to Twitter" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/youtube-logo.png" alt="Link to Youtube" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/linkedin-logo.png" alt="Link to LinkedIn" />
+                </a>
+            </div>
         </div>
-        <div>
+        <div class="footer__quote">
             <q>The best way to predict the future is to invent it.</q>
             <p>- Alan Kay</p>
         </div>
