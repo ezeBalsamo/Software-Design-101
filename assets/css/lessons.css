@@ -1,0 +1,19 @@
+.lessons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lesson__title {
+    font-size: 1.2rem;
+}
+
+.lesson {
+    height: 31.5rem;
+    width: 56rem;
+}
+
+.main_content h2 {
+    font-size: 2.8rem;
+    margin: 2rem;
+}
