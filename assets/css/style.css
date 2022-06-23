@@ -102,3 +102,294 @@ footer {
     padding: 1rem 1rem;
     text-align: center;
 }
+
+/*---------------- Begins style of Index page ----------------*/
+
+.main_grid_area {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 70% 30%;
+    row-gap: 2rem;
+    grid-template-areas:
+        "intro intro"
+        "latests aside";
+}
+
+.intro_grid_area {
+    grid-area: intro;
+}
+
+.latests_grid_area {
+    grid-area: latests;
+}
+
+.aside_grid_area {
+    grid-area: aside;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.section h3 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.section p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.latest__lessons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lesson {
+    height: 31.5rem;
+    width: 56rem;
+}
+
+.latest__articles {
+    list-style: none;
+    width: max-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.latest__articles li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    display: inline-block;
+    margin: 1.2rem;
+}
+
+.latest__articles li a:hover {
+    color: blue;
+}
+
+.aside_content {
+    text-align: center;
+}
+
+.aside_content h4 {
+    font-size: 2rem;
+}
+
+.subscription {
+    border: 0.2rem solid #fff;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+
+.subscription h4 {
+    margin-bottom: 1rem;
+}
+
+.subscription p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.subscription__form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription__form input {
+    margin-right: 1rem;
+}
+
+.subscription__form input::placeholder {
+    padding-left: 0.5rem;
+}
+
+.subscription__form input[type=submit] {
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    background-color: #498afb;
+    color: white;
+}
+
+.sponsors_section {
+    margin: 2rem auto;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors__logo {
+    margin: 1rem;
+    width: 10rem;
+}
+
+/*---------------- Ends style of Index page ----------------*/
+
+/*---------------- Begins style of Lessons page ----------------*/
+
+.lessons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lessons__title {
+    font-size: 2.8rem;
+    margin: 2rem;
+}
+
+/*---------------- Ends style of Lessons page ----------------*/
+
+/*---------------- Begins style of Blog page ----------------*/
+
+.article {
+    margin: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.article h2 {
+    font-size: 2.8rem;
+}
+
+.article__content {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.article__content h3 {
+    font-size: 2.2rem;
+    margin: 1rem auto;
+}
+
+.article__content p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.article__content .spotify_player {
+    border-radius: 1rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.article__content .comparison_table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.article__content .comparison_table th {
+    background-color: #dbe1e8;
+    text-align: center;
+}
+
+.article__content .comparison_table th,
+td {
+    padding: 0.5rem;
+    border: 0.1rem solid;
+}
+
+/*---------------- Ends style of Blog page ----------------*/
+
+/*---------------- Begins style of About page ----------------*/
+
+.text_left {
+    text-align: left;
+}
+
+.manifesto_title {
+    font-size: 2.8rem;
+    margin: 4rem auto;
+}
+
+.manifesto_principle {
+    margin: 4rem auto;
+}
+
+.manifesto_principle blockquote {
+    border-left: 0.3rem dashed #fff;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 2rem;
+}
+
+.manifesto_principle h3 {
+    font-size: 2.2rem;
+    margin: 2rem auto;
+}
+
+.manifesto_principle p {
+    font-size: 1.8rem;
+}
+
+/*---------------- Ends style of About page ----------------*/
+
+/*---------------- Begins style of Contact page ----------------*/
+
+.contact_section {
+    font-size: 1.8rem;
+}
+
+.contact_section form {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+.contact_section fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #dbe1e8;
+}
+
+.contact_section fieldset label {
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.contact_section fieldset input {
+    font-size: inherit;
+}
+
+.contact_section fieldset input:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.contact_section fieldset input::placeholder {
+    padding-left: 0.5rem;
+}
+
+.contact_section fieldset textarea {
+    font-size: inherit;
+}
+
+.contact_section fieldset input[type=submit] {
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #498afb;
+    color: white;
+}
+
+/*---------------- Ends style of Contact page ----------------*/
