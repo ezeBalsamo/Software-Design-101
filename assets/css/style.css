@@ -103,7 +103,7 @@ footer {
     text-align: center;
 }
 
-/*---------------- Begins style of Index page ----------------*/
+/*---------------- Ends common page style ----------------*/
 
 .main_grid_area {
     display: grid;
@@ -238,8 +238,6 @@ footer {
 
 /*---------------- Ends style of Index page ----------------*/
 
-/*---------------- Begins style of Lessons page ----------------*/
-
 .lessons {
     display: flex;
     justify-content: space-between;
@@ -252,8 +250,6 @@ footer {
 }
 
 /*---------------- Ends style of Lessons page ----------------*/
-
-/*---------------- Begins style of Blog page ----------------*/
 
 .article {
     margin: 2rem;
@@ -305,8 +301,6 @@ td {
 
 /*---------------- Ends style of Blog page ----------------*/
 
-/*---------------- Begins style of About page ----------------*/
-
 .text_left {
     text-align: left;
 }
@@ -338,8 +332,6 @@ td {
 }
 
 /*---------------- Ends style of About page ----------------*/
-
-/*---------------- Begins style of Contact page ----------------*/
 
 .contact_section {
     font-size: 1.8rem;
@@ -391,5 +383,3 @@ td {
     background-color: #498afb;
     color: white;
 }
-
-/*---------------- Ends style of Contact page ----------------*/
