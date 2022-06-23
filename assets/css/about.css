@@ -1,0 +1,29 @@
+.main_content {
+    text-align: left;
+}
+
+.main_content h2 {
+    font-size: 2.8rem;
+    margin: 4rem auto;
+}
+
+.manifesto_principle {
+    margin: 4rem auto;
+}
+
+.manifesto_principle blockquote {
+    border-left: 0.3rem dashed #fff;
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 2rem;
+}
+
+.manifesto_principle h3 {
+    font-size: 2.2rem;
+    margin: 2rem auto;
+}
+
+.manifesto_principle p {
+    font-size: 1.8rem;
+}

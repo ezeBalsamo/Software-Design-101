@@ -8,35 +8,36 @@
     <title>Software Design 101 - For beginners and not so much</title>
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 
 <body>
-    <main class="main_content">
-        <nav class="navigation_bar">
-            <a href="index.html">
-                <img class="navigation_bar__logo" src="assets/img/software-design-101-logo.png"
-                    alt="Software Design 101 Logo" />
-            </a>
-            <ul class="navigation_bar__options">
-                <li><a href="pages/lessons.html">Lessons</a></li>
-                <li><a href="pages/blog.html">Blog</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-            <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
-        </nav>
-        <!-- ends nav -->
-        <header>
-            <img class="main_image" src="assets/img/header.png" alt="Eat, sleep, code and repeat" />
-            <h1>The deep learning platform for developers</h1>
-        </header>
-        <!-- ends header -->
-        <section class="main_section">
-            <h2 class="main_section__heading">
+    <nav class="navigation_bar">
+        <a href="index.html">
+            <img class="navigation_bar__logo" src="assets/img/software-design-101-logo.png"
+                alt="Software Design 101 Logo" />
+        </a>
+        <ul class="navigation_bar__options">
+            <li><a href="pages/lessons.html">Lessons</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
+    </nav>
+    <!-- ends nav -->
+    <header>
+        <img src="assets/img/header.png" alt="Eat, sleep, code and repeat" />
+        <h1>The deep learning platform for developers</h1>
+    </header>
+    <!-- ends header -->
+    <main class="main_content main_grid_area">
+        <section class="intro_grid_area section">
+            <h2>
                 The time has finally come to become the best version of yourself as a
                 developer!
             </h2>
-            <p class="main_section__introduction">
+            <p>
                 Are you tired of going through course after course and not feeling any
                 significant progress at all? Feeling stuck in
                 <a href="https://dev.to/josemfcheo/que-es-el-tutorial-hell-y-por-que-debes-evitarlo-3iib#:~:text=Para%20tenerlo%20m%C3%A1s%20claro%2C%20el,Por%20qu%C3%A9%20una%20falsa%20productividad%3F"
@@ -53,65 +54,70 @@
             </p>
         </section>
         <!-- ends introduction section -->
-        <section class="main_section">
-            <h2 class="main_section__heading">Latest lessons</h2>
-            <iframe class="main_section__lesson" width="560" height="315"
-                src="https://www.youtube.com/embed/pTB30aXS77U" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe class="main_section__lesson" width="560" height="315"
-                src="https://www.youtube.com/embed/5m2_YPho_D4" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
-        <!-- ends "Latest lessons" section -->
-        <section class="main_section">
-            <h2 class="main_section__heading">Latest articles</h2>
-            <ul class="main_section__articles">
-                <li>
-                    <a href="pages/blog.html#article-id3">Some tips for Junior Devs</a>
-                </li>
-                <li>
-                    <a href="pages/blog.html#article-id2">Music to develop and concentrate</a>
-                </li>
-                <li>
-                    <a href="pages/blog.html#article-id1">Yet another Python vs Javascript non-sense comparison</a>
-                </li>
-            </ul>
-        </section>
-        <!-- ends "Latest articles" section -->
+        <div class="latests_grid_area">
+            <section class="section">
+                <h3>Latest lessons</h3>
+                <div class="lessons">
+                    <iframe class="lesson" src="https://www.youtube.com/embed/pTB30aXS77U" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe class="lesson" src="https://www.youtube.com/embed/5m2_YPho_D4" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <!-- ends "Latest lessons" section -->
+            <section class="section">
+                <h3>Latest articles</h3>
+                <ul class="articles">
+                    <li>
+                        <a href="pages/blog.html#article-id3">Some tips for Junior Devs</a>
+                    </li>
+                    <li>
+                        <a href="pages/blog.html#article-id2">Music to develop and concentrate</a>
+                    </li>
+                    <li>
+                        <a href="pages/blog.html#article-id1">Yet another Python vs Javascript non-sense comparison</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- ends "Latest articles" section -->
+        </div>
+        <!-- ends "Latests" section -->
+        <aside class="aside_grid_area aside_content">
+            <section class="subscription">
+                <h4>Subscribe to newsletter!</h4>
+                <p>
+                    You'll receive great articles and videos about the software development multiverse.
+                    <span class="semibold_weight">No spam 🙅‍♂️!</span>
+                </p>
+                <form class="subscription__form" action="#">
+                    <input type="email" name="email" id="email" placeholder="mail@mail.com" required />
+                    <input type="submit" value="Subscribe" />
+                </form>
+            </section>
+            <!-- ends "Subscribe to newsletter!" section -->
+            <section class="sponsors_section">
+                <h4>Sponsors</h4>
+                <div class="sponsors">
+                    <a href="https://www.arangodb.com/" target="_blank">
+                        <img class="sponsors__logo" src="assets/img/arangodb-logo.webp" alt="ArangoDB logo" />
+                    </a>
+                    <a href="https://pharo.org/" target="_blank">
+                        <img class="sponsors__logo" src="assets/img/pharo-logo.png" alt="Pharo Smalltalk logo" />
+                    </a>
+                    <a href="https://auth0.com/" target="_blank">
+                        <img class="sponsors__logo" src="assets/img/auth0-logo.svg" alt="Auth0 logo" />
+                    </a>
+                </div>
+            </section>
+            <!-- ends "Sponsors" section -->
+        </aside>
+        <!-- ends aside -->
     </main>
-    <aside class="aside_content">
-        <section class="subscription">
-            <h2 class="subscription__heading">Subscribe to newsletter!</h2>
-            <p>
-                You'll receive great articles and videos about backend, frontend, its
-                best practices and everything related to the software development
-                multiverse.
-                <span class="semibold_weight">No spam 🙅‍♂️!</span>
-            </p>
-            <form class="subscription__form" action="add_subscriber.php">
-                <input type="email" name="email" id="email" placeholder="mail@mail.com" required />
-                <input type="submit" value="Subscribe" />
-            </form>
-        </section>
-        <!-- ends "Subscribe to newsletter!" section -->
-        <section class="sponsors_section">
-            <h2>Sponsors</h2>
-            <div class="sponsors">
-                <a href="https://www.arangodb.com/" target="_blank">
-                    <img class="sponsors__logo" src="assets/img/arangodb-logo.webp" alt="ArangoDB logo" />
-                </a>
-                <a href="https://pharo.org/" target="_blank">
-                    <img class="sponsors__logo" src="assets/img/pharo-logo.png" alt="Pharo Smalltalk logo" />
-                </a>
-                <a href="https://auth0.com/" target="_blank">
-                    <img class="sponsors__logo" src="assets/img/auth0-logo.svg" alt="Auth0 logo" />
-                </a>
-            </div>
-        </section>
-        <!-- ends "Sponsors" section -->
-    </aside>
+    <!-- ends main -->
     <footer>
         <div>
             <p class="copyright">© 2022 Software Design 101</p>

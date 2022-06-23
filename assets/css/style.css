@@ -18,16 +18,8 @@ h1 {
     font-size: 3.5rem;
 }
 
-h2 {
-    font-size: 2.8rem;
-}
-
 .semibold_weight {
     font-weight: 600;
-}
-
-.main_content {
-    text-align: center;
 }
 
 .navigation_bar {
@@ -59,104 +51,33 @@ h2 {
     font-weight: 300;
 }
 
-.main_image {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
 #toggle_dark_light_mode {
     width: 7.5rem;
+    cursor: pointer;
 }
 
-.main_section {
-    width: 85%;
-    margin: 2rem auto;
+header img {
+    width: 100%;
 }
 
-.main_section__heading {
-    margin: 1rem auto;
-}
-
-.main_section__introduction {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-}
-
-.main_section__lesson {
-    padding: 1rem 1rem;
-}
-
-.main_section__articles {
-    list-style: none;
-    width: max-content;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.main_section__articles li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 2rem;
-    display: inline-block;
-    margin: 1.2rem;
-}
-
-.main_section__articles li a:hover {
-    color: blue;
-}
-
-.aside_content {
+header h1 {
     text-align: center;
+    margin: 2rem;
 }
 
-.subscription {
-    width: auto;
-    display: inline-block;
-    border: 0.2rem solid #fff;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
-    margin: auto 10rem;
-}
-
-.subscription__heading {
-    margin-bottom: 1rem;
-}
-
-.subscription p {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-}
-
-.subscription__form {
-    margin-top: 1rem;
-}
-
-.subscription__form input {
-    font-size: 1.8rem;
-}
-
-.sponsors_section {
-    width: 85%;
-    margin: 2rem auto;
-}
-
-.sponsors {
-    display: flex;
-    flex-direction: column;
-}
-
-.sponsors__logo {
-    margin: 1rem;
-    width: 10rem;
+.main_content {
+    text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 footer {
-    width: 85%;
+    width: 90%;
     margin: 2rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -176,7 +97,6 @@ footer {
 }
 
 .footer__quote {
-    width: 25%;
     background-color: #fff;
     border-radius: 1rem;
     padding: 1rem 1rem;

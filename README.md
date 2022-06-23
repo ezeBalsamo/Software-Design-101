@@ -10,8 +10,21 @@ This website and its development have an educational purpose, guided by Coderhou
 
 ## Quick links
 
-- [Wireframe web](https://wireframe.cc/W5e0Rn)
-- [Wireframe mobile](https://wireframe.cc/O3wL1e)
+### Wireframes Web
+
+- [Index](https://wireframe.cc/W5e0Rn)
+- [Lessons](https://wireframe.cc/FUajDC)
+- [Blog](https://wireframe.cc/cDjCuK)
+- [About](https://wireframe.cc/2qbPac)
+- [Contact](https://wireframe.cc/Oc0u6G)
+
+### Wireframes Mobile
+
+- [Index](https://wireframe.cc/O3wL1e)
+- [Lessons](https://wireframe.cc/JcdUhh)
+- [Blog](https://wireframe.cc/BU72zM)
+- [About](https://wireframe.cc/4tGm7T)
+- [Contact](https://wireframe.cc/TnD0Mh)
 
 ## License
 

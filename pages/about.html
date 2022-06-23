@@ -7,101 +7,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Design 101 - For beginners and not so much</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/about.css">
 </head>
 
 <body>
-    <main>
-        <nav>
-            <a href="../index.html">
-                <img src="../assets/img/software-design-101-logo.png" alt="Software Design 101 Logo" width="200px" />
-            </a>
-            <ul>
-                <li><a href="lessons.html">Lessons</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
-        </nav>
-        <!-- ends nav -->
-        <header>
-            <img src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
-            <h1>Mission</h1>
-        </header>
-        <!-- ends header -->
+    <nav class="navigation_bar">
+        <a href="../index.html">
+            <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.png"
+                alt="Software Design 101 Logo" width="200px" />
+        </a>
+        <ul class="navigation_bar__options">
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
+    </nav>
+    <!-- ends nav -->
+    <header>
+        <img class="main_image" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
+        <h1>Mission</h1>
+    </header>
+    <!-- ends header -->
+    <main class="main_content">
         <section>
             <article>
-                <p>The goal behind Software Design 101 is straightforward...</p>
-                <p>
-                    Create and gather content and resources that
-                    <strong>increase developer understanding, happiness and productivity.</strong>
-                </p>
-                <h2>Manifesto</h2>
-                <h3>Augment developer understanding and thus happiness</h3>
-                <blockquote cite="https://quotecatalog.com/quote/lauren-oliver-you-cant-be-ha-L1Nxxrp">You can't be
-                    happy unless you're unhappy sometimes. - Lauren Oliver
-                </blockquote>
-                <p>
-                    Building software will never be an easy task. Furthermore, unhappiness grows exponentially with
-                    the complexity of your project. There are no magical rules or principles to stick to, but I can
-                    recommend you to always write as little code as possible, try to solve the problems as fast as
-                    you can and, of course, now and then take your time to refactor your code. Don't forget that
-                    good code should be self explanatory.
-                </p>
-                <h3>Expand developer knowledge beyond comfort and custom</h3>
-                <blockquote cite="https://en.wikipedia.org/wiki/Law_of_the_instrument">If the only tool you have is a
-                    hammer, it is tempting to treat everything as if it were a
-                    nail. - Abraham Maslow
-                </blockquote>
-                <p>
-                    We all have that tool or programming language that we love and we want to solve every single problem
-                    with it. Well, although it could be really funny, we shouldn't be limited by any narrow set of
-                    ideas. Keep in mind to use the right tool for the each problem. It wouldn't be the first time that
-                    today's best practices are tomorrow's anti-patterns.
-                </p>
-                <h3>Rescue developer from being drowned by the wave of hype</h3>
-                <blockquote
-                    cite="https://quotepark.com/quotes/1838250-alan-kay-computing-spread-out-much-much-faster-than-educat/">
-                    "Computing spread out much, much faster than educating unsophisticated people can happen. In
-                    the last 25 years or so, we actually got something like a pop culture, similar to what happened when
-                    television came on the scene and some of its inventors thought it would be a way of getting
-                    Shakespeare to the masses. But they forgot that you have to be more sophisticated and have more
-                    perspective to understand Shakespeare. What television was able to do was to capture people as they
-                    were. So I think the lack of a real computer science today, and the lack of real software
-                    engineering today, is partly due to this pop culture. - Alan Kay"
-                </blockquote>
-                <p>
-                    Well, there's no much that I can add to that quote... While I'm writing this, I'm sure there is a
-                    new
-                    Javascript framework being pushed to Github. Always ask yourself
-                    <em>is this the best toolfor this task?</em>
-                    Just because it has a nice interface and is used by a well-known company
-                    doesn't mean you need to use it. We tend to over-engineer almost everything. Don't forget the
-                    <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS</a> principle.
-                </p>
+                <div class="manifesto_principle">
+                    <p>The goal behind Software Design 101 is straightforward...</p>
+                    <blockquote>
+                        Create and gather content and resources that
+                        <strong>increase developer understanding, happiness and productivity.</strong>
+                    </blockquote>
+                </div>
+                <h2>📜 Manifesto</h2>
+                <div class="manifesto_principle">
+                    <h3>1. 🤗 Augment developer understanding and thus happiness</h3>
+                    <blockquote cite="https://quotecatalog.com/quote/lauren-oliver-you-cant-be-ha-L1Nxxrp">You can't be
+                        happy unless you're unhappy sometimes. - Lauren Oliver
+                    </blockquote>
+                    <p>
+                        Building software will never be an easy task. Furthermore, unhappiness grows exponentially with
+                        the complexity of your project. There are no magical rules or principles to stick to, but I can
+                        recommend you to always write as little code as possible, try to solve the problems as fast as
+                        you can and, of course, now and then take your time to refactor your code. Don't forget that
+                        good code should be self explanatory.
+                    </p>
+                </div>
+                <div class="manifesto_principle">
+                    <h3>2. 📖 Expand developer knowledge beyond comfort and custom</h3>
+                    <blockquote cite="https://en.wikipedia.org/wiki/Law_of_the_instrument">If the only tool you have is
+                        a hammer, it is tempting to treat everything as if it were a nail. - Abraham Maslow
+                    </blockquote>
+                    <p>
+                        We all have that tool or programming language that we love and we want to solve every single
+                        problem with it. Well, although it could be really funny, we shouldn't be limited by any narrow
+                        set of ideas. Keep in mind to use the right tool for the each problem. It wouldn't be the first
+                        time that today's best practices are tomorrow's anti-patterns.
+                    </p>
+                </div>
+                <div class="manifesto_principle">
+                    <h3>3. 🛟 Rescue developer from being drowned by the wave of hype</h3>
+                    <blockquote
+                        cite="https://quotepark.com/quotes/1838250-alan-kay-computing-spread-out-much-much-faster-than-educat/">
+                        Computing spread out much, much faster than educating unsophisticated people can happen. In
+                        the last 25 years or so, we actually got something like a pop culture, similar to what happened
+                        when television came on the scene and some of its inventors thought it would be a way of getting
+                        Shakespeare to the masses. But they forgot that you have to be more sophisticated and have more
+                        perspective to understand Shakespeare. What television was able to do was to capture people as
+                        they were. So I think the lack of a real computer science today, and the lack of real software
+                        engineering today, is partly due to this pop culture. - Alan Kay
+                    </blockquote>
+                    <p>
+                        Well, there's no much that I can add to that quote... While I'm writing this, I'm sure there is
+                        a new Javascript framework being pushed to Github. Always ask yourself
+                        <em>is this the best tool for this task?</em>
+                        Just because it has a nice interface and is used by a well-known company
+                        doesn't mean you need to use it. We tend to over-engineer almost everything. Don't forget the
+                        <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS</a> principle.
+                    </p>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        <p>© 2022 Software Design 101</p>
         <div>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="../assets/img/facebook-logo.png" alt="Link to Facebook" width="100px" />
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="../assets/img/instagram-logo.webp" alt="Link to Instagram" width="100px" />
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="../assets/img/twitter-logo.webp" alt="Link to Twitter" width="100px" />
-            </a>
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="../assets/img/youtube-logo.png" alt="Link to Youtube" width="100px" />
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <img src="../assets/img/linkedin-logo.png" alt="Link to LinkedIn" width="100px" />
-            </a>
+            <p class="copyright">© 2022 Software Design 101</p>
+            <div class="social_networks">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/facebook-logo.png" alt="Link to Facebook" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/instagram-logo.webp"
+                        alt="Link to Instagram" />
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/twitter-logo.webp" alt="Link to Twitter" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/youtube-logo.png" alt="Link to Youtube" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img class="social_networks__logo" src="../assets/img/linkedin-logo.png" alt="Link to LinkedIn" />
+                </a>
+            </div>
         </div>
-        <div>
+        <div class="footer__quote">
             <q>The best way to predict the future is to invent it.</q>
             <p>- Alan Kay</p>
         </div>
