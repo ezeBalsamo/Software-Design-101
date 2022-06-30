@@ -81,9 +81,21 @@ header img {
     width: 100%;
 }
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 header h1 {
     text-align: center;
     margin: 2rem;
+    animation-name: opacity;
+    animation-duration: 1.5s;
 }
 
 .main_content {
