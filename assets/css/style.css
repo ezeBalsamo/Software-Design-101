@@ -53,11 +53,19 @@ h1 {
     justify-content: space-between;
 }
 
+.navigation_bar__options li:hover {
+    transform: scale(1.17);
+}
+
 .navigation_bar__options li a {
     color: #000;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 300;
+}
+
+.navigation_bar__options li a:hover {
+    font-weight: 400;
 }
 
 #toggle_dark_light_mode {
