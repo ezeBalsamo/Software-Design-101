@@ -376,6 +376,30 @@ td {
 
 /*---------------- Starts the style of Contact page ----------------*/
 
+.contact_presentation {
+    display: block;
+    margin: 0 auto 2rem;
+    font-size: 3rem;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: .4rem solid;
+    width: 19ch;
+    animation: typing 2s steps(19), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .contact_section {
     font-size: 2.5rem;
 }
@@ -423,8 +447,12 @@ td {
     border: none;
     border-radius: 1rem;
     padding: 1rem;
-    background-color: #498afb;
+    background: linear-gradient(to top, #2e76f1, #8dd5f1);
     color: white;
+}
+
+.contact_section fieldset input[type=submit]:hover {
+    background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
 }
 
 /*---------------- Starts the responsive style (1024) ----------------*/
