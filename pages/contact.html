@@ -13,22 +13,31 @@
 </head>
 
 <body>
-    <nav class="navigation_bar">
-        <a href="../index.html">
-            <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.png"
-                alt="Software Design 101 Logo" width="200px" />
-        </a>
-        <ul class="navigation_bar__options">
-            <li><a href="lessons.html">Lessons</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
+    <nav class="navbar navbar-expand-lg sticky-top navigation_bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+                <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.png"
+                    alt="Software Design 101 Logo" />
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="navbar-nav navigation_bar__options">
+                    <a class="nav-link mx-4" href="lessons.html">Lessons</a>
+                    <a class="nav-link mx-4" href="blog.html">Blog</a>
+                    <a class="nav-link mx-4" href="about.html">About</a>
+                    <a class="nav-link mx-4" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
+        </div>
     </nav>
     <!-- ends nav -->
     <header>
-        <img class="main_image" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
+        <img class="w-100" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
         <h1>Contact</h1>
     </header>
     <!-- ends header -->
