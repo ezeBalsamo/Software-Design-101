@@ -12,12 +12,6 @@ html {
 
 body {
     background: #dbe1e8;
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "header"
-        "main"
-        "footer";
 }
 
 h1 {
@@ -29,7 +23,6 @@ h1 {
 }
 
 .navigation_bar {
-    grid-area: nav;
     padding: 1rem 1.5rem;
     position: sticky;
     top: 0;
@@ -71,10 +64,6 @@ h1 {
     cursor: pointer;
 }
 
-header {
-    grid-area: header;
-}
-
 header img {
     width: 100%;
 }
@@ -97,14 +86,12 @@ header h1 {
 }
 
 .main_content {
-    grid-area: main;
     text-align: center;
     width: 90%;
     margin: auto;
 }
 
 footer {
-    grid-area: footer;
     margin: 2rem auto;
     display: grid;
     grid-template-areas:
