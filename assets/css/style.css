@@ -97,8 +97,16 @@ header h1 {
 }
 
 footer {
-    font-size: clamp(1.1rem, 100vw, 2rem);
+    font-size: clamp(0.7rem, 100vw, 1.5rem);
     font-weight: 300;
+}
+
+footer blockquote p {
+    font-size: clamp(0.7rem, 100vw, 1.5rem);
+}
+
+.blockquote-footer {
+    font-size: clamp(0.5rem, 100vw, 1.2rem);
 }
 
 .fit-content-center {
@@ -151,10 +159,6 @@ footer {
     margin: 1rem;
     width: 10rem;
 }
-
-/*---------------- Starts the style of Lessons page ----------------*/
-
-/*---------------- Starts the style of Blog page ----------------*/
 
 .vh-25 {
     height: 25vh;
@@ -218,20 +222,15 @@ form.row {
     }
 }
 
-/*---------------- Starts the Medium responsive style (768) ----------------*/
 @media only screen and (max-width:768px) {
 
-    /*---------------- Starts the Medium responsive style (768) of About page ----------------*/
     form.row>* {
         padding: 0;
     }
 
 }
 
-/*---------------- Starts the responsive style (992) ----------------*/
-
 @media only screen and (min-width: 992px) {
-    /*---------------- Starts the responsive style (992) common to all pages ----------------*/
 
     .copyright-and-social-networks {
         margin: 0;
