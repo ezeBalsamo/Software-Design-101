@@ -265,13 +265,32 @@ td {
     }
 }
 
+form.row {
+    justify-content: center;
+}
+
 .form-floating>textarea.form-control {
     height: 15vh;
 }
 
-.form-floating {
-    margin-bottom: 2rem;
-    padding: 0;
+/*---------------- Starts the Small responsive style (576) ----------------*/
+
+@media only screen and (min-width: 576px) {
+    /*---------------- Starts the Small responsive style (576) of About page ----------------*/
+
+    .form-width {
+        width: 75%;
+    }
+}
+
+/*---------------- Starts the Medium responsive style (768) ----------------*/
+@media only screen and (max-width:768px) {
+
+    /*---------------- Starts the Medium responsive style (768) of About page ----------------*/
+    form.row>* {
+        padding: 0;
+    }
+
 }
 
 /*---------------- Starts the responsive style (992) ----------------*/
