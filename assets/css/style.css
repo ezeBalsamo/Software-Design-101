@@ -68,43 +68,22 @@ header h1 {
     width: 90vw;
 }
 
-footer {
+.my-2r {
     margin: 2rem auto;
-    display: grid;
-    grid-template-areas:
-        "copyright_and_social_networks"
-        "quote";
-    row-gap: 2rem;
+}
+
+footer {
     font-size: 2.1rem;
     font-weight: 300;
 }
 
-.copyright_and_social_networks {
+.fit-content-center {
+    width: fit-content;
     margin: auto;
-    grid-area: copyright_and_social_networks;
 }
 
-.copyright {
-    text-align: center;
-}
-
-.social_networks {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0.5rem auto;
-}
-
-.social_networks__logo {
+.social_network_logo {
     width: 2.5rem;
-}
-
-.footer__quote {
-    grid-area: quote;
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
-    text-align: center;
 }
 
 /*---------------- Starts the style of Index page ----------------*/
