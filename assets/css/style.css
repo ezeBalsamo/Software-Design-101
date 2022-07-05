@@ -64,10 +64,8 @@ header h1 {
     animation-duration: 1s;
 }
 
-.main_content {
-    text-align: center;
+.vw-90 {
     width: 90vw;
-    margin: auto;
 }
 
 footer {
