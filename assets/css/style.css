@@ -120,22 +120,10 @@ footer {
     color: blue;
 }
 
-.aside_content {
-    text-align: center;
-}
-
-.aside_content h4 {
-    font-size: 2.8rem;
-}
-
 .subscription {
     border: 0.2rem solid #fff;
     border-radius: 1rem;
-    padding: 1rem 1rem;
-}
-
-.subscription h4 {
-    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .subscription p {

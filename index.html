@@ -65,77 +65,86 @@
             </p>
         </section>
         <!-- ends introduction section -->
-        <div>
-            <section class="mb-2r">
-                <h3 class="fs-h3 mb-2r">Latest lessons</h3>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 col-xxl-6">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/pTB30aXS77U" title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-lg-9">
+                    <section class="mb-2r">
+                        <h3 class="fs-h3 mb-2r">Latest lessons</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12 col-xxl-6">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/pTB30aXS77U"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-xxl-6">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="https://www.youtube.com/embed/5m2_YPho_D4"
+                                            title="YouTube video player"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-xxl-6">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/5m2_YPho_D4" title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
+                    </section>
+                    <!-- ends "Latest lessons" section -->
+                    <section class="mb-2r">
+                        <h3 class="fs-h3 mb-2r">Latest articles</h3>
+                        <div class="text-start list-group fit-content-center">
+                            <a class="list-group-item list-group-item-action mb-3 article-link"
+                                href="pages/blog.html#article-id3">Some tips for Junior Devs</a>
+                            <a class="list-group-item list-group-item-action mb-3 article-link"
+                                href="pages/blog.html#article-id2">Music to develop and concentrate</a>
+                            <a class="list-group-item list-group-item-action mb-3 article-link"
+                                href="pages/blog.html#article-id1">Yet another Python vs Javascript non-sense
+                                comparison</a>
                         </div>
-            </section>
-            <!-- ends "Latest lessons" section -->
-            <section class="mb-2r">
-                <h3 class="fs-h3 mb-2r">Latest articles</h3>
-                <div class="text-start list-group fit-content-center">
-                    <a class="list-group-item list-group-item-action mb-3 article-link"
-                        href="pages/blog.html#article-id3">Some tips for Junior Devs</a>
-                    <a class="list-group-item list-group-item-action mb-3 article-link"
-                        href="pages/blog.html#article-id2">Music to develop and concentrate</a>
-                    <a class="list-group-item list-group-item-action mb-3 article-link"
-                        href="pages/blog.html#article-id1">Yet another Python vs Javascript non-sense comparison</a>
+                    </section>
+                    <!-- ends "Latest articles" section -->
                 </div>
-            </section>
-            <!-- ends "Latest articles" section -->
+                <!-- ends "Latests" section -->
+                <aside class="col-md-12 col-lg-3 text-center">
+                    <section class="subscription">
+                        <h4 class="fs-h4 mb-3">Subscribe to newsletter!</h4>
+                        <p>
+                            You'll receive great articles and videos about the software development multiverse.
+                            <span class="semibold_weight">No spam 🙅‍♂️!</span>
+                        </p>
+                        <form class="mt-3" action="#">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <input class="col-sm-6 col-lg-12 col-xxl-6" type="email" name="email" id="email"
+                                        placeholder="mail@mail.com" required />
+                                    <button class="col-sm-6 col-lg-12 col-xxl-6 btn btn-subscription"
+                                        type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <!-- ends "Subscribe to newsletter!" section -->
+                    <section class="my-2r">
+                        <h4 class="fs-h4">Sponsors</h4>
+                        <div class="d-flex flex-column align-items-center">
+                            <a href="https://www.arangodb.com/" target="_blank">
+                                <img class="sponsor_logo" src="assets/img/arangodb-logo.webp" alt="ArangoDB logo" />
+                            </a>
+                            <a href="https://pharo.org/" target="_blank">
+                                <img class="sponsor_logo" src="assets/img/pharo-logo.png" alt="Pharo Smalltalk logo" />
+                            </a>
+                            <a href="https://auth0.com/" target="_blank">
+                                <img class="sponsor_logo" src="assets/img/auth0-logo.svg" alt="Auth0 logo" />
+                            </a>
+                        </div>
+                    </section>
+                    <!-- ends "Sponsors" section -->
+                </aside>
+                <!-- ends aside -->
+            </div>
         </div>
-        <!-- ends "Latests" section -->
-        <aside class="aside_content">
-            <section class="subscription">
-                <h4 class="fs-h4 mb-3">Subscribe to newsletter!</h4>
-                <p>
-                    You'll receive great articles and videos about the software development multiverse.
-                    <span class="semibold_weight">No spam 🙅‍♂️!</span>
-                </p>
-                <form class="mt-3" action="#">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <input class="col-sm-6 col-lg-12 col-xxl-6" type="email" name="email" id="email"
-                                placeholder="mail@mail.com" required />
-                            <button class="col-sm-6 col-lg-12 col-xxl-6 btn btn-subscription"
-                                type="submit">Subscribe</button>
-                        </div>
-                    </div>
-                </form>
-            </section>
-            <!-- ends "Subscribe to newsletter!" section -->
-            <section class="my-2r">
-                <h4 class="fs-h4">Sponsors</h4>
-                <div class="d-flex flex-column align-items-center">
-                    <a href="https://www.arangodb.com/" target="_blank">
-                        <img class="sponsor_logo" src="assets/img/arangodb-logo.webp" alt="ArangoDB logo" />
-                    </a>
-                    <a href="https://pharo.org/" target="_blank">
-                        <img class="sponsor_logo" src="assets/img/pharo-logo.png" alt="Pharo Smalltalk logo" />
-                    </a>
-                    <a href="https://auth0.com/" target="_blank">
-                        <img class="sponsor_logo" src="assets/img/auth0-logo.svg" alt="Auth0 logo" />
-                    </a>
-                </div>
-            </section>
-            <!-- ends "Sponsors" section -->
-        </aside>
-        <!-- ends aside -->
     </main>
     <!-- ends main -->
     <footer class="text-center vw-90 my-2r">
