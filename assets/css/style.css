@@ -143,22 +143,11 @@ footer {
     line-height: 2.7rem;
 }
 
-.subscription__form {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.subscription__form input {
-    margin-right: 1rem;
-}
-
 .subscription__form input::placeholder {
     padding-left: 0.5rem;
 }
 
-.subscription__form input[type=submit] {
-    cursor: pointer;
+.btn-subscription {
     border: none;
     border-radius: 1rem;
     padding: 0.4rem;
