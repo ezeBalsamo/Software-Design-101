@@ -155,18 +155,6 @@ footer {
 
 /*---------------- Starts the style of Lessons page ----------------*/
 
-.lessons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
-}
-
-.lessons__title {
-    font-size: 3.92rem;
-    margin: 2rem;
-}
-
 /*---------------- Starts the style of Blog page ----------------*/
 
 .article {
