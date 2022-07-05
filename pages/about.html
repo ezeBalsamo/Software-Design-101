@@ -8,7 +8,7 @@
     <title>Software Design 101 - For beginners and not so much</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
@@ -45,59 +45,108 @@
     <main class="text_left vw-90 m-auto">
         <section>
             <article>
-                <div class="manifesto_principle">
-                    <p>The goal behind Software Design 101 is straightforward...</p>
-                    <blockquote>
-                        Create and gather content and resources that
-                        <strong>increase developer understanding, happiness and productivity.</strong>
-                    </blockquote>
-                </div>
-                <h2 class="manifesto_title">📜 Manifesto</h2>
-                <div class="manifesto_principle">
-                    <h3>1. 🤗 Augment developer understanding and thus happiness</h3>
-                    <blockquote cite="https://quotecatalog.com/quote/lauren-oliver-you-cant-be-ha-L1Nxxrp">You can't be
-                        happy unless you're unhappy sometimes. - Lauren Oliver
-                    </blockquote>
-                    <p>
-                        Building software will never be an easy task. Furthermore, unhappiness grows exponentially with
-                        the complexity of your project. There are no magical rules or principles to stick to, but I can
-                        recommend you to always write as little code as possible, try to solve the problems as fast as
-                        you can and, of course, now and then take your time to refactor your code. Don't forget that
-                        good code should be self explanatory.
-                    </p>
-                </div>
-                <div class="manifesto_principle">
-                    <h3>2. 📖 Expand developer knowledge beyond comfort and custom</h3>
-                    <blockquote cite="https://en.wikipedia.org/wiki/Law_of_the_instrument">If the only tool you have is
-                        a hammer, it is tempting to treat everything as if it were a nail. - Abraham Maslow
-                    </blockquote>
-                    <p>
-                        We all have that tool or programming language that we love and we want to solve every single
-                        problem with it. Well, although it could be really funny, we shouldn't be limited by any narrow
-                        set of ideas. Keep in mind to use the right tool for the each problem. It wouldn't be the first
-                        time that today's best practices are tomorrow's anti-patterns.
-                    </p>
-                </div>
-                <div class="manifesto_principle">
-                    <h3>3. 🛟 Rescue developer from being drowned by the wave of hype</h3>
-                    <blockquote
-                        cite="https://quotepark.com/quotes/1838250-alan-kay-computing-spread-out-much-much-faster-than-educat/">
-                        Computing spread out much, much faster than educating unsophisticated people can happen. In
-                        the last 25 years or so, we actually got something like a pop culture, similar to what happened
-                        when television came on the scene and some of its inventors thought it would be a way of getting
-                        Shakespeare to the masses. But they forgot that you have to be more sophisticated and have more
-                        perspective to understand Shakespeare. What television was able to do was to capture people as
-                        they were. So I think the lack of a real computer science today, and the lack of real software
-                        engineering today, is partly due to this pop culture. - Alan Kay
-                    </blockquote>
-                    <p>
-                        Well, there's no much that I can add to that quote... While I'm writing this, I'm sure there is
-                        a new Javascript framework being pushed to Github. Always ask yourself
-                        <em>is this the best tool for this task?</em>
-                        Just because it has a nice interface and is used by a well-known company
-                        doesn't mean you need to use it. We tend to over-engineer almost everything. Don't forget the
-                        <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS</a> principle.
-                    </p>
+                <p>The goal behind Software Design 101 is straightforward...</p>
+                <blockquote>
+                    Create and gather content and resources that
+                    <strong>increase developer understanding, happiness and
+                        productivity.</strong>
+                </blockquote>
+                <h2 class="fs-h2 my-5">📜 Manifesto</h2>
+                <div class="accordion" id="manifestoAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header fs-h3" id="flush-headingOne">
+                            <button class="accordion-button fs-inherit collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                1. 🤗 Augment developer understanding and thus happiness
+                            </button>
+                        </h3>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#manifestoAccordion">
+                            <div class="accordion-body">
+                                <blockquote cite="https://quotecatalog.com/quote/lauren-oliver-you-cant-be-ha-L1Nxxrp">
+                                    You can't be happy unless you're unhappy sometimes. - Lauren
+                                    Oliver
+                                </blockquote>
+                                <p>
+                                    Building software will never be an easy task. Furthermore,
+                                    unhappiness grows exponentially with the complexity of your
+                                    project. There are no magical rules or principles to stick
+                                    to, but I can recommend you to always write as little code
+                                    as possible, try to solve the problems as fast as you can
+                                    and, of course, now and then take your time to refactor your
+                                    code. Don't forget that good code should be self
+                                    explanatory.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header fs-h3" id="flush-headingTwo">
+                            <button class="accordion-button fs-inherit collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                2. 📖 Expand developer knowledge beyond comfort and custom
+                            </button>
+                        </h3>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#manifestoAccordion">
+                            <div class="accordion-body">
+                                <blockquote cite="https://en.wikipedia.org/wiki/Law_of_the_instrument">
+                                    If the only tool you have is a hammer, it is tempting to
+                                    treat everything as if it were a nail. - Abraham Maslow
+                                </blockquote>
+                                <p>
+                                    We all have that tool or programming language that we love
+                                    and we want to solve every single problem with it. Well,
+                                    although it could be really funny, we shouldn't be limited
+                                    by any narrow set of ideas. Keep in mind to use the right
+                                    tool for the each problem. It wouldn't be the first time
+                                    that today's best practices are tomorrow's anti-patterns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header fs-h3" id="flush-headingThree">
+                            <button class="accordion-button fs-inherit collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                3. 🛟 Rescue developer from being drowned by the wave of hype
+                            </button>
+                        </h3>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#manifestoAccordion">
+                            <div class="accordion-body">
+                                <blockquote
+                                    cite="https://quotepark.com/quotes/1838250-alan-kay-computing-spread-out-much-much-faster-than-educat/">
+                                    Computing spread out much, much faster than educating
+                                    unsophisticated people can happen. In the last 25 years or
+                                    so, we actually got something like a pop culture, similar to
+                                    what happened when television came on the scene and some of
+                                    its inventors thought it would be a way of getting
+                                    Shakespeare to the masses. But they forgot that you have to
+                                    be more sophisticated and have more perspective to
+                                    understand Shakespeare. What television was able to do was
+                                    to capture people as they were. So I think the lack of a
+                                    real computer science today, and the lack of real software
+                                    engineering today, is partly due to this pop culture. - Alan
+                                    Kay
+                                </blockquote>
+                                <p>
+                                    Well, there's no much that I can add to that quote... While
+                                    I'm writing this, I'm sure there is a new Javascript
+                                    framework being pushed to Github. Always ask yourself
+                                    <em>is this the best tool for this task?</em>
+                                    Just because it has a nice interface and is used by a
+                                    well-known company doesn't mean you need to use it. We tend
+                                    to over-engineer almost everything. Don't forget the
+                                    <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS</a>
+                                    principle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
