@@ -98,6 +98,10 @@ footer {
     margin: auto;
 }
 
+.copyright-and-social-networks {
+    margin-bottom: 2rem;
+}
+
 .social_network_logo {
     width: 2.5rem;
 }
@@ -316,6 +320,20 @@ td {
 
 .contact_section fieldset input[type=submit]:hover {
     background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
+}
+
+/*---------------- Starts the responsive style (992) ----------------*/
+
+@media only screen and (min-width: 992px) {
+    /*---------------- Starts the responsive style (992) common to all pages ----------------*/
+
+    .copyright-and-social-networks {
+        margin: 0;
+    }
+
+    .footer-row {
+        justify-content: space-between;
+    }
 }
 
 /*---------------- Starts the responsive style (1024) ----------------*/
