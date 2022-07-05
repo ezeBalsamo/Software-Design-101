@@ -62,7 +62,7 @@ header h1 {
     text-align: center;
     margin: 2rem;
     animation-name: opacity;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 .main_content {
