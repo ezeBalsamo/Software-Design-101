@@ -109,22 +109,14 @@ footer {
     line-height: 3.2rem;
 }
 
-.latest__articles {
-    list-style: none;
-    width: max-content;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.latest__articles li a {
+.article-link {
     color: #000;
-    text-decoration: none;
     font-size: 2rem;
-    display: inline-block;
-    margin: 1.2rem;
+    background-color: #dbe1e8;
+    border: none;
 }
 
-.latest__articles li a:hover {
+.article-link:hover {
     color: blue;
 }
 
