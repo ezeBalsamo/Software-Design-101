@@ -155,6 +155,11 @@ footer {
     color: white;
 }
 
+.btn-subscription:hover {
+    background-color: #1a66e9;
+    color: white;
+}
+
 .sponsor_logo {
     margin: 1rem;
     width: 10rem;
