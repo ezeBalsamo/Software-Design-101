@@ -40,6 +40,7 @@ h1 {
 .navigation_bar__options a:hover {
     transform: scale(1.17);
     font-weight: 400;
+    transition: all 0.15s;
 }
 
 #toggle_dark_light_mode {
