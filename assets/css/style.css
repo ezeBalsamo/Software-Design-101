@@ -88,26 +88,6 @@ footer {
 
 /*---------------- Starts the style of Index page ----------------*/
 
-.main_grid_area {
-    display: grid;
-    grid-template-areas:
-        "intro"
-        "latests"
-        "aside";
-}
-
-.intro_grid_area {
-    grid-area: intro;
-}
-
-.latests_grid_area {
-    grid-area: latests;
-}
-
-.aside_grid_area {
-    grid-area: aside;
-}
-
 .section {
     margin-bottom: 2rem;
 }
