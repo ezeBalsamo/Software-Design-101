@@ -32,12 +32,21 @@ h1 {
 
 p,
 a,
+blockquote,
 .input-fs {
     font-size: clamp(0.8rem, 100vw, 1.7rem);
 }
 
 .semibold_weight {
     font-weight: 600;
+}
+
+.vh-25 {
+    height: 25vh;
+}
+
+.fs-inherit {
+    font-size: inherit;
 }
 
 .navigation_bar {
@@ -159,22 +168,20 @@ footer blockquote p {
     width: 10rem;
 }
 
-.vh-25 {
-    height: 25vh;
-}
-
 /*---------------- Starts the style of About page ----------------*/
 
-blockquote {
+.white-blockquote-border {
     border-left: 0.3rem dashed #fff;
-    padding-left: 1rem;
-    font-size: clamp(1.3rem, 100vw, 2.5rem);
-    font-weight: 300;
-    margin: 2rem;
 }
 
-.fs-inherit {
-    font-size: inherit;
+.black-blockquote-border {
+    border-left: 0.3rem dashed #000;
+}
+
+blockquote {
+    padding-left: 1rem;
+    font-weight: 300;
+    margin: 2rem;
 }
 
 /*---------------- Starts the style of Contact page ----------------*/
