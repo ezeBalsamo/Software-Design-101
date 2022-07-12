@@ -4,7 +4,8 @@
   "description": "A website for educational purposes, developed through the Coderhouse Web Development course.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path assets/scss assets/scss/main.scss assets/css/main.css"
   },
   "repository": {
     "type": "git",
