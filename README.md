@@ -1,6 +1,6 @@
 # Software Design 101
 
-![Logo](assets/img/software-design-101-logo.png)
+![Logo](assets/img/software-design-101-logo.svg)
 
 A website for beginning (and not so) developers to learn about frontend, backend and their best practices.
 

@@ -3,8 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -14,30 +12,44 @@ html {
 
 body {
     background: #dbe1e8;
-    display: grid;
-    grid-template-areas:
-        "nav"
-        "header"
-        "main"
-        "footer";
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 100vw, 4rem);
+}
+
+.fs-h2 {
+    font-size: clamp(1.5rem, 100vw, 2.8rem);
+}
+
+.fs-h3 {
+    font-size: clamp(1.3rem, 100vw, 2.5rem);
+}
+
+.fs-h4 {
+    font-size: clamp(1.1rem, 100vw, 2rem);
+}
+
+p,
+a,
+blockquote,
+.input-fs {
+    font-size: clamp(0.8rem, 100vw, 1.7rem);
 }
 
 .semibold_weight {
     font-weight: 600;
 }
 
+.vh-25 {
+    height: 25vh;
+}
+
+.fs-inherit {
+    font-size: inherit;
+}
+
 .navigation_bar {
-    grid-area: nav;
-    padding: 1rem 1.5rem;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-image: url('../img/navigation-bar-background-image.jpg');
     background-size: cover;
 }
@@ -46,39 +58,20 @@ h1 {
     width: 15rem;
 }
 
-.navigation_bar__options {
-    list-style: none;
-    width: 45rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation_bar__options li:hover {
-    transform: scale(1.17);
-}
-
-.navigation_bar__options li a {
+.navigation_bar__options a {
     color: #000;
-    text-decoration: none;
-    font-size: 2rem;
+    font-size: clamp(1.1rem, 100vw, 2rem);
     font-weight: 300;
 }
 
-.navigation_bar__options li a:hover {
+.navigation_bar__options a:hover {
+    transform: scale(1.17);
     font-weight: 400;
+    transition: all 0.15s;
 }
 
 #toggle_dark_light_mode {
-    width: 7.5rem;
     cursor: pointer;
-}
-
-header {
-    grid-area: header;
-}
-
-header img {
-    width: 100%;
 }
 
 @keyframes opacity {
@@ -95,283 +88,100 @@ header h1 {
     text-align: center;
     margin: 2rem;
     animation-name: opacity;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
-.main_content {
-    grid-area: main;
-    text-align: center;
-    width: 90%;
-    margin: auto;
+.vw-90 {
+    width: 90vw;
+}
+
+.mb-2r {
+    margin-bottom: 2rem;
+}
+
+.my-2r {
+    margin: 2rem auto;
 }
 
 footer {
-    grid-area: footer;
-    margin: 2rem auto;
-    display: grid;
-    grid-template-areas:
-        "copyright_and_social_networks"
-        "quote";
-    row-gap: 2rem;
-    font-size: 2.1rem;
+    font-size: clamp(0.7rem, 100vw, 1.5rem);
     font-weight: 300;
 }
 
-.copyright_and_social_networks {
+footer blockquote p {
+    font-size: clamp(0.7rem, 100vw, 1.5rem);
+}
+
+.blockquote-footer {
+    font-size: clamp(0.5rem, 100vw, 1.2rem);
+}
+
+.fit-content-center {
+    width: fit-content;
     margin: auto;
-    grid-area: copyright_and_social_networks;
 }
 
-.copyright {
-    text-align: center;
+.copyright-and-social-networks {
+    margin-bottom: 2rem;
 }
 
-.social_networks {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0.5rem auto;
-}
-
-.social_networks__logo {
+.social_network_logo {
     width: 2.5rem;
 }
 
-.footer__quote {
-    grid-area: quote;
-    background-color: #fff;
+.btn-submit {
+    border: none;
     border-radius: 1rem;
-    padding: 1rem 1rem;
-    text-align: center;
+    background: linear-gradient(to top, #2e76f1, #8dd5f1);
+    color: white;
+    font-size: clamp(0.7rem, 100vw, 1.5rem);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
 }
 
 /*---------------- Starts the style of Index page ----------------*/
 
-.main_grid_area {
-    display: grid;
-    grid-template-areas:
-        "intro"
-        "latests"
-        "aside";
-}
-
-.intro_grid_area {
-    grid-area: intro;
-}
-
-.latests_grid_area {
-    grid-area: latests;
-}
-
-.aside_grid_area {
-    grid-area: aside;
-}
-
-.section {
-    margin-bottom: 2rem;
-}
-
-.section h2 {
-    font-size: 3.9rem;
-    margin-bottom: 2rem;
-}
-
-.section h3 {
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
-}
-
-.section p {
-    font-size: 2.5rem;
-    line-height: 3.2rem;
-}
-
-.latest__lessons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
-}
-
-.lesson {
-    height: 31.5rem;
-    width: 56rem;
-}
-
-.latest__articles {
-    list-style: none;
-    width: max-content;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.latest__articles li a {
+.article-link {
     color: #000;
-    text-decoration: none;
-    font-size: 2rem;
-    display: inline-block;
-    margin: 1.2rem;
+    background-color: #dbe1e8;
+    border: none;
 }
 
-.latest__articles li a:hover {
+.article-link:hover {
     color: blue;
-}
-
-.aside_content {
-    text-align: center;
-}
-
-.aside_content h4 {
-    font-size: 2.8rem;
 }
 
 .subscription {
     border: 0.2rem solid #fff;
     border-radius: 1rem;
-    padding: 1rem 1rem;
-}
-
-.subscription h4 {
-    margin-bottom: 1rem;
-}
-
-.subscription p {
-    font-size: 2.1rem;
-    line-height: 2.7rem;
-}
-
-.subscription__form {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.subscription__form input {
-    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .subscription__form input::placeholder {
     padding-left: 0.5rem;
 }
 
-.subscription__form input[type=submit] {
-    cursor: pointer;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.4rem;
-    background-color: #498afb;
-    color: white;
-}
-
-.sponsors_section {
-    margin: 2rem auto;
-}
-
-.sponsors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sponsors__logo {
+.aside_logo {
     margin: 1rem;
     width: 10rem;
 }
 
-/*---------------- Starts the style of Lessons page ----------------*/
-
-.lessons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2rem;
-}
-
-.lessons__title {
-    font-size: 3.92rem;
-    margin: 2rem;
-}
-
-/*---------------- Starts the style of Blog page ----------------*/
-
-.article {
-    margin: 2rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-
-.article h2 {
-    font-size: 3.92rem;
-}
-
-.article__content {
-    margin-top: 2rem;
-    text-align: left;
-    font-size: 2.1rem;
-}
-
-.article__content h3 {
-    font-size: 3.1rem;
-    margin: 1rem auto;
-}
-
-.article__content p:not(:last-child) {
-    margin-bottom: 2rem;
-}
-
-.article__content .spotify_player {
-    border-radius: 1rem;
-    width: 100%;
-    height: 30rem;
-}
-
-.article__content .comparison_table {
-    margin: auto;
-    border-collapse: collapse;
-}
-
-.article__content .comparison_table th {
-    background-color: #dbe1e8;
-    text-align: center;
-}
-
-.article__content .comparison_table th,
-td {
-    padding: 0.5rem;
-    border: 0.1rem solid;
-}
-
 /*---------------- Starts the style of About page ----------------*/
 
-.text_left {
-    text-align: left;
-}
-
-.manifesto_title {
-    font-size: 3.92rem;
-    margin: 4rem auto;
-}
-
-.manifesto_principle {
-    margin: 4rem auto;
-}
-
-.manifesto_principle blockquote {
+.white-blockquote-border {
     border-left: 0.3rem dashed #fff;
+}
+
+.black-blockquote-border {
+    border-left: 0.3rem dashed #000;
+}
+
+blockquote {
     padding-left: 1rem;
-    font-size: 2.8rem;
     font-weight: 300;
     margin: 2rem;
-}
-
-.manifesto_principle h3 {
-    font-size: 3.9rem;
-    margin: 2rem auto;
-}
-
-.manifesto_principle p {
-    font-size: 2.5rem;
 }
 
 /*---------------- Starts the style of Contact page ----------------*/
@@ -379,7 +189,7 @@ td {
 .contact_presentation {
     display: block;
     margin: 0 auto 2rem;
-    font-size: 3rem;
+    font-size: clamp(1.3rem, 100vw, 2.5rem);
     font-family: monospace;
     white-space: nowrap;
     border-right: .4rem solid;
@@ -400,185 +210,37 @@ td {
     }
 }
 
-.contact_section {
-    font-size: 2.5rem;
+form.row {
+    justify-content: center;
+    align-items: center;
 }
 
-.contact_section form {
-    width: fit-content;
-    margin: 2rem auto;
-}
-
-.contact_section fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: #dbe1e8;
-}
-
-.contact_section fieldset label {
-    font-weight: 600;
+.form-floating {
     font-style: italic;
-    margin-bottom: 0.5rem;
-    text-align: left;
+    font-size: clamp(0.5rem, 100vw, 1.1rem);
 }
 
-.contact_section fieldset input {
-    font-size: inherit;
+.form-floating>textarea.form-control {
+    height: 15vh;
 }
 
-.contact_section fieldset input:not(:last-child) {
-    margin-bottom: 2rem;
-}
+/*---------------- Starts the Small responsive style (576) ----------------*/
 
-.contact_section fieldset input::placeholder {
-    padding-left: 0.5rem;
-}
+@media only screen and (min-width: 576px) {
+    /*---------------- Starts the Small responsive style (576) of About page ----------------*/
 
-.contact_section fieldset textarea {
-    font-size: inherit;
-}
-
-.contact_section fieldset input[type=submit] {
-    margin-top: 2rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem;
-    background: linear-gradient(to top, #2e76f1, #8dd5f1);
-    color: white;
-}
-
-.contact_section fieldset input[type=submit]:hover {
-    background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
-}
-
-/*---------------- Starts the responsive style (1024) ----------------*/
-
-@media only screen and (min-width: 1024px) {
-    /*---------------- Starts the responsive style (1024) common to all pages ----------------*/
-
-    h1 {
-        font-size: 3.5rem;
+    .form-width {
+        width: 75%;
     }
+}
 
-    footer {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 1.5rem;
-    }
+@media only screen and (min-width: 992px) {
 
-    .copyright_and_social_networks {
+    .copyright-and-social-networks {
         margin: 0;
     }
 
-    /*---------------- Starts the responsive style (1024) of Index page ----------------*/
-
-    .main_grid_area {
-        grid-template-columns: 70% 30%;
-        grid-template-areas:
-            "intro intro"
-            "latests aside";
-        column-gap: 2rem;
-    }
-
-    .subscription__form {
-        flex-direction: column;
-        row-gap: 1rem;
-    }
-
-    .section h2 {
-        font-size: 2.8rem;
-    }
-
-    .section h3 {
-        font-size: 2.3rem;
-    }
-
-    .section p {
-        font-size: 1.8rem;
-        line-height: 2.3rem;
-    }
-
-    .aside_content h4 {
-        font-size: 2rem;
-    }
-
-    .subscription p {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-
-    /*---------------- Starts the responsive style (1024) of Lessons page ----------------*/
-
-    .lessons__title {
-        font-size: 2.8rem;
-    }
-
-    /*---------------- Starts the responsive style (1024) of Blog page ----------------*/
-
-    .article h2 {
-        font-size: 2.8rem;
-    }
-
-    .article__content {
-        font-size: 1.5rem;
-    }
-
-    .article__content h3 {
-        font-size: 2.2rem;
-    }
-
-    /*---------------- Starts the responsive style (1024) of Blog page ----------------*/
-
-    .manifesto_title {
-        font-size: 2.8rem;
-    }
-
-    .manifesto_principle blockquote {
-        font-size: 2rem;
-    }
-
-    .manifesto_principle h3 {
-        font-size: 2.2rem;
-    }
-
-    .manifesto_principle p {
-        font-size: 1.8rem;
-    }
-
-    /*---------------- Starts the responsive style (1024) of Blog page ----------------*/
-
-    .contact_section {
-        font-size: 1.8rem;
-    }
-
-    /*---------------- Starts the responsive style (1200) ----------------*/
-
-    @media only screen and (min-width: 1200px) {
-
-        /*---------------- Starts the responsive style (1200) of Index page ----------------*/
-
-        .latest__lessons {
-            display: flex;
-            flex-direction: row;
-            column-gap: 2rem;
-        }
-
-        .subscription__form {
-            flex-direction: row;
-        }
-
-        /*---------------- Starts the responsive style (1200) of Lessons page ----------------*/
-        .lessons {
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            column-gap: 1rem;
-        }
+    .footer-row {
+        justify-content: space-between;
     }
 }

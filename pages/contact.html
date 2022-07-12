@@ -7,30 +7,42 @@
     <meta name="viewport" content="width=device-width" />
     <title>Software Design 101 - For beginners and not so much</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
 <body>
-    <nav class="navigation_bar">
-        <a href="../index.html">
-            <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.png"
-                alt="Software Design 101 Logo" width="200px" />
-        </a>
-        <ul class="navigation_bar__options">
-            <li><a href="lessons.html">Lessons</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <input type="checkbox" name="toggle_dark_light_mode" id="toggle_dark_light_mode" />
+    <nav class="navbar navbar-expand-md sticky-top navigation_bar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="../index.html">
+                <img class="navigation_bar__logo" src="../assets/img/software-design-101-logo.svg"
+                    alt="Software Design 101 Logo" />
+            </a>
+            <div class="order-1 order-md-0 collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="navbar-nav align-items-center navigation_bar__options">
+                    <a class="nav-link mx-5" href="lessons.html">Lessons</a>
+                    <a class="nav-link mx-5" href="blog.html">Blog</a>
+                    <a class="nav-link mx-5" href="about.html">About</a>
+                    <a class="nav-link mx-5" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <input class="order-0 order-md-1" type="checkbox" name="toggle_dark_light_mode"
+                id="toggle_dark_light_mode" />
+        </div>
     </nav>
     <!-- ends nav -->
     <header>
-        <img class="main_image" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
+        <img class="w-100" src="../assets/img/header.png" alt="Eat, sleep, code and repeat" />
         <h1>Contact</h1>
     </header>
     <!-- ends header -->
-    <main class="main_content">
+    <main class="text-center vw-90 m-auto">
         <span class="contact_presentation">Hi, my name is Eze!</span>
         <section class="contact_section">
             <p>
@@ -38,47 +50,81 @@
                 of a company and you want to know how we can collaborate,
                 write me below so that we can get in touch.
             </p>
-            <form action="#">
-                <fieldset>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="e.g. Alexander Smith" required />
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="e.g. mail@mail.com" required />
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Send" />
-                </fieldset>
+            <form action="#" class="row g-4 form-width m-auto">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control form-control-lg input-fs" name="name" id="name"
+                            placeholder="e.g. Alexander Smith" required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control form-control-lg input-fs" name="email" id="email"
+                            placeholder="e.g. mail@mail.com" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-floating">
+                        <textarea class="form-control input-fs" name="message" id="message"
+                            placeholder="I love your content!"></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                </div>
+                <button class="btn btn-submit col-md-6 col-xl-4 p-3" type="submit">Send</button>
             </form>
         </section>
     </main>
     <!-- ends main -->
-    <footer>
-        <div class="copyright_and_social_networks">
-            <p class="copyright">© 2022 Software Design 101</p>
-            <div class="social_networks">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img class="social_networks__logo" src="../assets/img/facebook-logo.png" alt="Link to Facebook" />
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img class="social_networks__logo" src="../assets/img/instagram-logo.webp"
-                        alt="Link to Instagram" />
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img class="social_networks__logo" src="../assets/img/twitter-logo.webp" alt="Link to Twitter" />
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img class="social_networks__logo" src="../assets/img/youtube-logo.png" alt="Link to Youtube" />
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img class="social_networks__logo" src="../assets/img/linkedin-logo.png" alt="Link to LinkedIn" />
-                </a>
+    <footer class="text-center vw-90 my-2r">
+        <div class="container-fluid">
+            <div class="row footer-row align-items-center">
+                <div class="copyright-and-social-networks fit-content-center col-lg-7 col-xl-8 col-xxl-9">
+                    <p class="my-0">© 2022 Software Design 101</p>
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="social_network_logo" src="../assets/img/facebook-logo.png"
+                                alt="Link to Facebook" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img class="social_network_logo" src="../assets/img/instagram-logo.webp"
+                                alt="Link to Instagram" />
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="social_network_logo" src="../assets/img/twitter-logo.webp"
+                                alt="Link to Twitter" />
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img class="social_network_logo" src="../assets/img/youtube-logo.png"
+                                alt="Link to Youtube" />
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img class="social_network_logo" src="../assets/img/linkedin-logo.png"
+                                alt="Link to LinkedIn" />
+                        </a>
+                    </div>
+                    <!-- ends social networks -->
+                </div>
+                <!-- ends copyright and social networks -->
+                <div class="col-lg-5 col-xl-4 col-xxl-3 card p-0">
+                    <div class="card-header">Today's quote</div>
+                    <div class="card-body">
+                        <blockquote class="blockquote m-0">
+                            <p>The best way to predict the future is to invent it.</p>
+                            <div class="blockquote-footer">Alan Kay</div>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- ends quote -->
             </div>
-        </div>
-        <div class="footer__quote">
-            <q>The best way to predict the future is to invent it.</q>
-            <p>- Alan Kay</p>
+            <!-- ends footer row -->
         </div>
     </footer>
+    <!-- ends footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
