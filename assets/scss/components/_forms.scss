@@ -1,0 +1,11 @@
+form.row {
+    justify-content: center;
+    align-items: center;
+}
+
+.form-floating {
+    font-style: italic;
+    &>textarea.form-control {
+        height: 15vh;
+    }
+}
