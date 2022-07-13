@@ -1,0 +1,33 @@
+footer {
+    @include fluid-font-size-typed(xs);
+    font-weight: $light-wright;
+
+    .copyright-and-social-networks {
+        margin-bottom: 2rem;
+
+        .social_network_logo {
+            width: 2.5rem;
+        }
+    }
+
+    blockquote p {
+        @include fluid-font-size-typed(xs);
+    }
+
+    .blockquote-footer {
+        @include fluid-font-size-typed(xxs);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    footer {
+        .copyright-and-social-networks {
+            margin: 0;
+        }
+
+        .row {
+            justify-content: space-between;
+        }
+    }
+}
