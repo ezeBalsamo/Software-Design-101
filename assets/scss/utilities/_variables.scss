@@ -1,0 +1,31 @@
+// Color
+
+$white-theme-color: #dbe1e8;
+$white: #fff;
+$black: #000;
+$light-blue: #8dd5f1;
+$dodger-blue: #2e76f1;
+$blue: #0000ff;
+
+
+// Font Weight
+
+$light-wright: 300;
+$regular-weight: 400;
+$semibold-weight: 600;
+
+// Font Size
+$max-font-size-by-type: (
+    xxl: 4rem,
+    xl: 2.8rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.7rem,
+    xs: 1.5rem,
+    xxs: 1.2rem,
+);
+
+// Font Family
+
+$monospace: monospace;
+$main-font-family: 'Montserrat', sans-serif;
