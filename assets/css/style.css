@@ -1,246 +1,234 @@
-/*---------------- Starts the style common to all pages ----------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background: #dbe1e8;
+  background: #dbe1e8;
 }
 
 h1 {
-    font-size: clamp(2rem, 100vw, 4rem);
+  font-size: clamp(2rem, 100vw, 4rem);
 }
 
 .fs-h2 {
-    font-size: clamp(1.5rem, 100vw, 2.8rem);
+  font-size: clamp(1.4rem, 100vw, 2.8rem);
 }
 
 .fs-h3 {
-    font-size: clamp(1.3rem, 100vw, 2.5rem);
+  font-size: clamp(1.25rem, 100vw, 2.5rem);
 }
 
 .fs-h4 {
-    font-size: clamp(1.1rem, 100vw, 2rem);
+  font-size: clamp(1rem, 100vw, 2rem);
 }
 
 p,
 a,
 blockquote,
 .input-fs {
-    font-size: clamp(0.8rem, 100vw, 1.7rem);
+  font-size: clamp(0.85rem, 100vw, 1.7rem);
 }
 
 .semibold_weight {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .vh-25 {
-    height: 25vh;
+  height: 25vh;
 }
 
 .fs-inherit {
-    font-size: inherit;
-}
-
-.navigation_bar {
-    background-image: url('../img/navigation-bar-background-image.jpg');
-    background-size: cover;
-}
-
-.navigation_bar__logo {
-    width: 15rem;
-}
-
-.navigation_bar__options a {
-    color: #000;
-    font-size: clamp(1.1rem, 100vw, 2rem);
-    font-weight: 300;
-}
-
-.navigation_bar__options a:hover {
-    transform: scale(1.17);
-    font-weight: 400;
-    transition: all 0.15s;
-}
-
-#toggle_dark_light_mode {
-    cursor: pointer;
-}
-
-@keyframes opacity {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-header h1 {
-    text-align: center;
-    margin: 2rem;
-    animation-name: opacity;
-    animation-duration: 1s;
+  font-size: inherit;
 }
 
 .vw-90 {
-    width: 90vw;
+  width: 90vw;
 }
 
 .mb-2r {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-2r {
-    margin: 2rem auto;
-}
-
-footer {
-    font-size: clamp(0.7rem, 100vw, 1.5rem);
-    font-weight: 300;
-}
-
-footer blockquote p {
-    font-size: clamp(0.7rem, 100vw, 1.5rem);
-}
-
-.blockquote-footer {
-    font-size: clamp(0.5rem, 100vw, 1.2rem);
+  margin: 2rem auto;
 }
 
 .fit-content-center {
-    width: fit-content;
-    margin: auto;
-}
-
-.copyright-and-social-networks {
-    margin-bottom: 2rem;
-}
-
-.social_network_logo {
-    width: 2.5rem;
-}
-
-.btn-submit {
-    border: none;
-    border-radius: 1rem;
-    background: linear-gradient(to top, #2e76f1, #8dd5f1);
-    color: white;
-    font-size: clamp(0.7rem, 100vw, 1.5rem);
-}
-
-.btn-submit:hover {
-    background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
-}
-
-/*---------------- Starts the style of Index page ----------------*/
-
-.article-link {
-    color: #000;
-    background-color: #dbe1e8;
-    border: none;
-}
-
-.article-link:hover {
-    color: blue;
-}
-
-.subscription {
-    border: 0.2rem solid #fff;
-    border-radius: 1rem;
-    padding: 1rem;
-}
-
-.subscription__form input::placeholder {
-    padding-left: 0.5rem;
-}
-
-.aside_logo {
-    margin: 1rem;
-    width: 10rem;
-}
-
-/*---------------- Starts the style of About page ----------------*/
-
-.white-blockquote-border {
-    border-left: 0.3rem dashed #fff;
-}
-
-.black-blockquote-border {
-    border-left: 0.3rem dashed #000;
-}
-
-blockquote {
-    padding-left: 1rem;
-    font-weight: 300;
-    margin: 2rem;
-}
-
-/*---------------- Starts the style of Contact page ----------------*/
-
-.contact_presentation {
-    display: block;
-    margin: 0 auto 2rem;
-    font-size: clamp(1.3rem, 100vw, 2.5rem);
-    font-family: monospace;
-    white-space: nowrap;
-    border-right: .4rem solid;
-    width: 19ch;
-    animation: typing 2s steps(19), blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  width: fit-content;
+  margin: auto;
 }
 
 form.row {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-floating {
-    font-style: italic;
-    font-size: clamp(0.5rem, 100vw, 1.1rem);
+  font-style: italic;
 }
 
-.form-floating>textarea.form-control {
-    height: 15vh;
+.form-floating > textarea.form-control {
+  height: 15vh;
 }
 
-/*---------------- Starts the Small responsive style (576) ----------------*/
+.btn-submit {
+  font-size: clamp(0.75rem, 100vw, 1.5rem);
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(to top, #2e76f1, #8dd5f1);
+  color: #fff;
+}
 
-@media only screen and (min-width: 576px) {
-    /*---------------- Starts the Small responsive style (576) of About page ----------------*/
+.btn-submit:hover {
+  background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
+}
 
-    .form-width {
-        width: 75%;
-    }
+.navigation_bar {
+  background-image: url("../img/navigation-bar-background-image.jpg");
+  background-size: cover;
+}
+
+.navigation_bar .navigation_bar__logo {
+  width: 15rem;
+}
+
+.navigation_bar .navigation_bar__options a {
+  font-size: clamp(1rem, 100vw, 2rem);
+  color: #000;
+  font-weight: 300;
+}
+
+.navigation_bar .navigation_bar__options a:hover {
+  transform: scale(1.17);
+  font-weight: 400;
+  transition: all 0.15s;
+}
+
+#toggle_dark_light_mode {
+  cursor: pointer;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header h1 {
+  text-align: center;
+  margin: 2rem;
+  animation-name: opacity;
+  animation-duration: 1s;
+}
+
+footer {
+  font-size: clamp(0.75rem, 100vw, 1.5rem);
+  font-weight: 300;
+}
+
+footer .copyright-and-social-networks {
+  margin-bottom: 2rem;
+}
+
+footer .copyright-and-social-networks .social_network_logo {
+  width: 2.5rem;
+}
+
+footer blockquote p {
+  font-size: clamp(0.75rem, 100vw, 1.5rem);
+}
+
+footer .blockquote-footer {
+  font-size: clamp(0.6rem, 100vw, 1.2rem);
 }
 
 @media only screen and (min-width: 992px) {
+  footer .copyright-and-social-networks {
+    margin: 0;
+  }
+  footer .row {
+    justify-content: space-between;
+  }
+}
 
-    .copyright-and-social-networks {
-        margin: 0;
-    }
+.article-link {
+  color: #000;
+  background-color: #dbe1e8;
+  border: none;
+}
 
-    .footer-row {
-        justify-content: space-between;
-    }
+.article-link:hover {
+  color: #0000ff;
+}
+
+.subscription {
+  border: 0.2rem solid #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.subscription .subscription__form input::placeholder {
+  padding-left: 0.5rem;
+}
+
+.aside_logo {
+  margin: 1rem;
+  width: 10rem;
+}
+
+.manifesto-quote {
+  padding-left: 1rem;
+  font-weight: 300;
+  margin: 2rem;
+}
+
+.blockquote-border, .white-blockquote-border, .black-blockquote-border {
+  border-left-width: 0.3rem;
+  border-left-style: dashed;
+}
+
+.white-blockquote-border {
+  border-left-color: #fff;
+}
+
+.black-blockquote-border {
+  border-left-color: #000;
+}
+
+.contact_presentation {
+  font-size: clamp(1.25rem, 100vw, 2.5rem);
+  display: block;
+  margin: 0 auto 2rem;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: .4rem solid;
+  width: 19ch;
+  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .form-width {
+    width: 75%;
+  }
 }
