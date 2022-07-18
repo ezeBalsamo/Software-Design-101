@@ -1,0 +1,23 @@
+.navigation_bar {
+    background-image: url('../img/navigation-bar-background-image.jpg');
+    background-size: cover;
+
+    .navigation_bar__logo {
+        width: 15rem;
+    }
+    
+    .navigation_bar__options a {
+        @include fluid-font-size-typed(md);
+        color: $black;
+        font-weight: $light-wright;
+        &:hover {
+            transform: scale(1.17);
+            font-weight: 400;
+            transition: all 0.15s;
+        }
+    }
+}
+
+#toggle_dark_light_mode {
+    cursor: pointer;
+}
