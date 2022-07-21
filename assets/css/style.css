@@ -212,6 +212,16 @@ form.row {
   transition: all 0.15s;
 }
 
+@media only screen and (min-width: 992px) {
+  .navigation_bar {
+    top: -6.2rem;
+    transition: top 0.5s ease;
+  }
+  .navigation_bar:hover {
+    top: 0;
+  }
+}
+
 #toggle_dark_light_mode {
   cursor: pointer;
 }
