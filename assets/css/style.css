@@ -194,6 +194,12 @@ form.row {
 
 .card {
   background-color: var(--card-body-color);
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
 }
 
 .card-rounded-corners {
