@@ -194,11 +194,14 @@ form.row {
 
 .card {
   background-color: var(--card-body-color);
+}
+
+.animated-card {
   transform: translateY(0);
   transition: transform 0.3s;
 }
 
-.card:hover {
+.animated-card:hover {
   transform: translateY(-0.5rem);
 }
 
