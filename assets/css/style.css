@@ -1,14 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+body.light-theme {
+  --theme-background-color: #dbe1e8;
+  --theme-text-color: black;
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --theme-background-color: #dbe1e8;
+    --theme-text-color: black;
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.25s;
+  }
+}
+
+body.dark-theme {
+  --theme-background-color: #12181b;
+  --theme-text-color: white;
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.25s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --theme-background-color: #12181b;
+    --theme-text-color: white;
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.25s;
+  }
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background: #dbe1e8;
 }
 
 h1 {
@@ -99,7 +131,7 @@ form.row {
 
 .navigation_bar .navigation_bar__options a {
   font-size: clamp(1rem, 100vw, 2rem);
-  color: #000;
+  color: var(--theme-text-color);
   font-weight: 300;
 }
 
@@ -160,8 +192,8 @@ footer .blockquote-footer {
 }
 
 .article-link {
-  color: #000;
-  background-color: #dbe1e8;
+  color: var(--theme-text-color);
+  background-color: var(--theme-background-color);
   border: none;
 }
 

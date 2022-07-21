@@ -1,0 +1,11 @@
+@mixin update-root-colors($background-color, $text-color) {
+  --theme-background-color: #{$background-color};
+  --theme-text-color: #{$text-color};
+}
+
+@mixin theme($background-color, $text-color) {
+  @include update-root-colors($background-color, $text-color);
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.25s;
+}

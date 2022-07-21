@@ -1,65 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 * {
-    font-family: $main-font-family;
+  font-family: $main-font-family;
 }
 
 html {
-    font-size: 62.5%;
-}
-
-body {
-    background: $white-theme-color;
+  font-size: 62.5%;
 }
 
 h1 {
-    @include fluid-font-size-typed(xxl);
+  @include fluid-font-size-typed(xxl);
 }
 
 .fs-h2 {
-    @include fluid-font-size-typed(xl);
+  @include fluid-font-size-typed(xl);
 }
 
 .fs-h3 {
-    @include fluid-font-size-typed(lg);
+  @include fluid-font-size-typed(lg);
 }
 
 .fs-h4 {
-    @include fluid-font-size-typed(md);
+  @include fluid-font-size-typed(md);
 }
 
 p,
 a,
 blockquote,
 .input-fs {
-    @include fluid-font-size-typed(sm);
+  @include fluid-font-size-typed(sm);
 }
 
 .semibold_weight {
-    font-weight: $semibold-weight;
+  font-weight: $semibold-weight;
 }
 
 .vh-25 {
-    height: 25vh;
+  height: 25vh;
 }
 
 .fs-inherit {
-    font-size: inherit;
+  font-size: inherit;
 }
 
 .vw-90 {
-    width: 90vw;
+  width: 90vw;
 }
 
 .mb-2r {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-2r {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 .fit-content-center {
-    width: fit-content;
-    margin: auto;
+  width: fit-content;
+  margin: auto;
 }
