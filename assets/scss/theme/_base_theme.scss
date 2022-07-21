@@ -14,9 +14,10 @@ $themes: (
   --theme-nav-background-color: #{map-get($theme-map, nav-background-color)};
 }
 
-@mixin update-toggle-image($toggle-image-name) {
+@mixin update-toggle-image($theme-map) {
   #toggle_dark_light_mode {
-    background-image: url("../img/#{$toggle-image-name}");
+    background-image: url("../img/#{map-get($theme-map, toggle-image-name)}");
+    filter: map-get($theme-map, toggle-image-fill-color);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
@@ -29,7 +30,7 @@ $themes: (
 
 @mixin theme_from($theme-map) {
   @include update-base-colors($theme-map);
-  @include update-toggle-image(map-get($theme-map, toggle-image-name));
+  @include update-toggle-image($theme-map);
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   @include theme-transition;

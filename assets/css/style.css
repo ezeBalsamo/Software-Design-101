@@ -11,6 +11,7 @@ body.light-theme {
 
 body.light-theme #toggle_dark_light_mode {
   background-image: url("../img/moon-stars-fill.svg");
+  filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
@@ -32,6 +33,7 @@ body.light-theme #toggle_dark_light_mode {
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/moon-stars-fill.svg");
+    filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
@@ -54,6 +56,7 @@ body.dark-theme {
 
 body.dark-theme #toggle_dark_light_mode {
   background-image: url("../img/sun-fill.svg");
+  filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
@@ -75,6 +78,7 @@ body.dark-theme #toggle_dark_light_mode {
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/sun-fill.svg");
+    filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
