@@ -27,3 +27,9 @@
 #toggle_dark_light_mode {
   cursor: pointer;
 }
+
+.navbar-toggler-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  filter: var(--theme-toggle-image-fill-color);
+}
