@@ -3,6 +3,7 @@ body.light-theme {
   --theme-background-color: #dbe1e8;
   --theme-text-color: #000;
   --card-body-color: #fff;
+  --theme-nav-background-color: #fff;
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   transition: all 0.5s;
@@ -24,6 +25,7 @@ body.light-theme #toggle_dark_light_mode {
     --theme-background-color: #dbe1e8;
     --theme-text-color: #000;
     --card-body-color: #fff;
+    --theme-nav-background-color: #fff;
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
     transition: all 0.5s;
@@ -44,6 +46,7 @@ body.dark-theme {
   --theme-background-color: #12181b;
   --theme-text-color: #fff;
   --card-body-color: #b2becd;
+  --theme-nav-background-color: #2a2e35;
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   transition: all 0.5s;
@@ -65,6 +68,7 @@ body.dark-theme #toggle_dark_light_mode {
     --theme-background-color: #12181b;
     --theme-text-color: #fff;
     --card-body-color: #b2becd;
+    --theme-nav-background-color: #2a2e35;
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
     transition: all 0.5s;
@@ -189,8 +193,7 @@ form.row {
 }
 
 .navigation_bar {
-  background-image: url("../img/navigation-bar-background-image.jpg");
-  background-size: cover;
+  background-color: var(--theme-nav-background-color);
 }
 
 .navigation_bar .navigation_bar__logo {

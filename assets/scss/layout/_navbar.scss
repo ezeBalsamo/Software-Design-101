@@ -1,7 +1,5 @@
 .navigation_bar {
-  background-image: url("../img/navigation-bar-background-image.jpg");
-  background-size: cover;
-
+  background-color: var(--theme-nav-background-color);
   .navigation_bar__logo {
     width: 15rem;
   }
