@@ -1,11 +1,29 @@
+@mixin theme-transition {
+  transition: all 0.5s;
+}
+
 @mixin update-root-colors($background-color, $text-color) {
   --theme-background-color: #{$background-color};
   --theme-text-color: #{$text-color};
 }
 
-@mixin theme($background-color, $text-color) {
+@mixin update-toggle-image($toggle-image-name) {
+  #toggle_dark_light_mode {
+    background-image: url("../img/#{$toggle-image-name}");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    @include theme-transition;
+  }
+}
+
+@mixin theme($background-color, $text-color, $toggle-image-name) {
   @include update-root-colors($background-color, $text-color);
+  @include update-toggle-image($toggle-image-name);
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
-  transition: all 0.25s;
+  @include theme-transition;
 }

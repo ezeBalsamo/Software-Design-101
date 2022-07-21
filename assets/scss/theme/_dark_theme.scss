@@ -2,7 +2,11 @@ $dark-theme-background-color: #12181b;
 $dark-theme-text-color: white;
 
 @mixin dark-theme {
-  @include theme($dark-theme-background-color, $dark-theme-text-color);
+  @include theme(
+    $dark-theme-background-color,
+    $dark-theme-text-color,
+    "sun-fill.svg"
+  );
 }
 
 body.dark-theme {

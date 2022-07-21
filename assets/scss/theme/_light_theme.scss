@@ -2,7 +2,11 @@ $white-theme-background-color: #dbe1e8;
 $white-theme-text-color: black;
 
 @mixin light-theme {
-  @include theme($white-theme-background-color, $white-theme-text-color);
+  @include theme(
+    $white-theme-background-color,
+    $white-theme-text-color,
+    "moon-stars-fill.svg"
+  );
 }
 
 body.light-theme {
