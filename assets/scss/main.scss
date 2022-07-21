@@ -1,6 +1,10 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
+@import "theme/light_theme";
+@import "theme/dark_theme";
+@import "theme/base_theme";
+
 @import "base/base";
 
 @import "components/forms";

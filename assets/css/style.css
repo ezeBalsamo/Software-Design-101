@@ -1,14 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+body.light-theme {
+  --theme-background-color: #dbe1e8;
+  --theme-text-color: #000;
+  --card-body-color: #fff;
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.5s;
+}
+
+body.light-theme #toggle_dark_light_mode {
+  background-image: url("../img/moon-stars-fill.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.5s;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --theme-background-color: #dbe1e8;
+    --theme-text-color: #000;
+    --card-body-color: #fff;
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.5s;
+  }
+  body #toggle_dark_light_mode {
+    background-image: url("../img/moon-stars-fill.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 0.5s;
+  }
+}
+
+body.dark-theme {
+  --theme-background-color: #12181b;
+  --theme-text-color: #fff;
+  --card-body-color: #b2becd;
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.5s;
+}
+
+body.dark-theme #toggle_dark_light_mode {
+  background-image: url("../img/sun-fill.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.5s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --theme-background-color: #12181b;
+    --theme-text-color: #fff;
+    --card-body-color: #b2becd;
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.5s;
+  }
+  body #toggle_dark_light_mode {
+    background-image: url("../img/sun-fill.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 0.5s;
+  }
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background: #dbe1e8;
 }
 
 h1 {
@@ -63,6 +141,10 @@ blockquote,
   margin: auto;
 }
 
+.card {
+  background-color: var(--card-body-color);
+}
+
 form.row {
   justify-content: center;
   align-items: center;
@@ -72,8 +154,25 @@ form.row {
   font-style: italic;
 }
 
+.form-floating > * {
+  color: var(--theme-text-color);
+}
+
+.form-floating > *:focus {
+  color: var(--theme-text-color);
+  background-color: var(--card-body-color);
+}
+
+.form-floating > textarea {
+  background-color: var(--card-body-color);
+}
+
 .form-floating > textarea.form-control {
   height: 15vh;
+}
+
+.form-floating > input {
+  background-color: var(--card-body-color);
 }
 
 .btn-submit {
@@ -85,6 +184,7 @@ form.row {
 }
 
 .btn-submit:hover {
+  color: #000;
   background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
 }
 
@@ -99,7 +199,7 @@ form.row {
 
 .navigation_bar .navigation_bar__options a {
   font-size: clamp(1rem, 100vw, 2rem);
-  color: #000;
+  color: var(--theme-text-color);
   font-weight: 300;
 }
 
@@ -160,8 +260,8 @@ footer .blockquote-footer {
 }
 
 .article-link {
-  color: #000;
-  background-color: #dbe1e8;
+  color: var(--theme-text-color);
+  background-color: var(--theme-background-color);
   border: none;
 }
 
@@ -201,6 +301,10 @@ footer .blockquote-footer {
 
 .black-blockquote-border {
   border-left-color: #000;
+}
+
+#manifestoAccordion {
+  --bs-accordion-bg: var(--card-body-color);
 }
 
 .contact_presentation {

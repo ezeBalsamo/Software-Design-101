@@ -1,20 +1,24 @@
 .manifesto-quote {
-    padding-left: 1rem;
-    font-weight: $light-wright;
-    margin: 2rem;
+  padding-left: 1rem;
+  font-weight: $light-wright;
+  margin: 2rem;
 }
 
-.blockquote-border{
-    border-left-width: 0.3rem;
-    border-left-style: dashed;
+.blockquote-border {
+  border-left-width: 0.3rem;
+  border-left-style: dashed;
 }
 
 .white-blockquote-border {
-    @extend .blockquote-border;
-    border-left-color: $white;
+  @extend .blockquote-border;
+  border-left-color: $white;
 }
 
 .black-blockquote-border {
-    @extend .blockquote-border;
-    border-left-color: $black;
+  @extend .blockquote-border;
+  border-left-color: $black;
+}
+
+#manifestoAccordion {
+  --bs-accordion-bg: var(--card-body-color);
 }
