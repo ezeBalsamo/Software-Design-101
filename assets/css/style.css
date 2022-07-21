@@ -47,7 +47,7 @@ body.light-theme #toggle_dark_light_mode {
 body.dark-theme {
   --theme-background-color: #12181b;
   --theme-text-color: #fff;
-  --card-body-color: #b2becd;
+  --card-body-color: #2a2e35;
   --theme-nav-background-color: #2a2e35;
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
@@ -70,7 +70,7 @@ body.dark-theme #toggle_dark_light_mode {
   body {
     --theme-background-color: #12181b;
     --theme-text-color: #fff;
-    --card-body-color: #b2becd;
+    --card-body-color: #2a2e35;
     --theme-nav-background-color: #2a2e35;
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
