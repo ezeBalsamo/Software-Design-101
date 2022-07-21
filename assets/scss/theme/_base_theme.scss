@@ -12,6 +12,10 @@ $themes: (
   --theme-text-color: #{map-get($theme-map, text-color)};
   --card-body-color: #{map-get($theme-map, card-body-color)};
   --theme-nav-background-color: #{map-get($theme-map, nav-background-color)};
+  --theme-toggle-image-fill-color: #{map-get(
+      $theme-map,
+      toggle-image-fill-color
+    )};
 }
 
 @mixin update-toggle-image($theme-map) {
@@ -26,6 +30,10 @@ $themes: (
     height: 3.5rem;
     @include theme-transition;
   }
+}
+
+@mixin navbar-toggler-icon($theme-map) {
+  filter: map-get($theme-map, toggle-image-fill-color);
 }
 
 @mixin theme_from($theme-map) {
