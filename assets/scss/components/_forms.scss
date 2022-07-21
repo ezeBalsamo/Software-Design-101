@@ -10,18 +10,18 @@ form.row {
     color: var(--theme-text-color);
     &:focus {
       color: var(--theme-text-color);
-      background-color: var(--theme-background-color);
+      background-color: var(--card-body-color);
     }
   }
 
   & > textarea {
-    background-color: var(--theme-background-color);
+    background-color: var(--card-body-color);
     &.form-control {
       height: 15vh;
     }
   }
 
   & > input {
-    background-color: var(--theme-background-color);
+    background-color: var(--card-body-color);
   }
 }

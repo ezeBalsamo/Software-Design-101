@@ -160,11 +160,11 @@ form.row {
 
 .form-floating > *:focus {
   color: var(--theme-text-color);
-  background-color: var(--theme-background-color);
+  background-color: var(--card-body-color);
 }
 
 .form-floating > textarea {
-  background-color: var(--theme-background-color);
+  background-color: var(--card-body-color);
 }
 
 .form-floating > textarea.form-control {
@@ -172,7 +172,7 @@ form.row {
 }
 
 .form-floating > input {
-  background-color: var(--theme-background-color);
+  background-color: var(--card-body-color);
 }
 
 .btn-submit {
