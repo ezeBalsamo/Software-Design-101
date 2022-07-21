@@ -1,11 +1,27 @@
 form.row {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-floating {
-    font-style: italic;
-    &>textarea.form-control {
-        height: 15vh;
+  font-style: italic;
+
+  & > * {
+    color: var(--theme-text-color);
+    &:focus {
+      color: var(--theme-text-color);
+      background-color: var(--theme-background-color);
     }
+  }
+
+  & > textarea {
+    background-color: var(--theme-background-color);
+    &.form-control {
+      height: 15vh;
+    }
+  }
+
+  & > input {
+    background-color: var(--theme-background-color);
+  }
 }
