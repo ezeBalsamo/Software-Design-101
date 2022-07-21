@@ -213,6 +213,14 @@ form.row {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 30, 84, 0.12);
 }
 
+.accordion-item {
+  --bs-accordion-color: var(--theme-text-color);
+}
+
+.accordion-button {
+  --bs-accordion-btn-color: var(--theme-text-color);
+}
+
 .navigation_bar {
   background-color: var(--theme-nav-background-color);
 }
