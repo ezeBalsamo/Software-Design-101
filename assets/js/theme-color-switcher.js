@@ -1,7 +1,8 @@
+let themeModeDescription = "theme-mode";
 let darkThemeClassName = "dark-theme";
 let lightThemeClassName = "light-theme";
 
-function bodyClasses(){
+function bodyClasses() {
   return document.body.classList;
 }
 
@@ -17,8 +18,9 @@ function oppositeThemeOf(aThemeClassName) {
 
 function switchToThemeNamed(aThemeClassName) {
   let classes = bodyClasses();
-  classes.remove(oppositeThemeOf(aThemeClassName))
+  classes.remove(oppositeThemeOf(aThemeClassName));
   classes.add(aThemeClassName);
+  localStorage.setItem(themeModeDescription, aThemeClassName);
 }
 
 function switchToDarkTheme() {
@@ -37,8 +39,15 @@ function switchTheme() {
   switchToThemeNamed(oppositeThemeOf(currentThemeClassName()));
 }
 
-let darkSchemeMediaMatcher = window.matchMedia("(prefers-color-scheme: dark)");
-switchThemeAccordingTo(darkSchemeMediaMatcher.matches);
+function switchThemeAccordingToUserPreference() {
+  let darkThemeMediaMatcher = window.matchMedia("(prefers-color-scheme: dark)");
+  darkThemeMediaMatcher.matches ? switchToDarkTheme() : switchToLightTheme();
+}
+
+let potentialThemeClassName = localStorage.getItem(themeModeDescription);
+potentialThemeClassName === null
+  ? switchThemeAccordingToUserPreference()
+  : switchToThemeNamed(potentialThemeClassName);
 
 document
   .getElementById("toggle_dark_light_mode")
