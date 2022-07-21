@@ -1,7 +1,5 @@
 .navigation_bar {
-  background-image: url("../img/navigation-bar-background-image.jpg");
-  background-size: cover;
-
+  background-color: var(--theme-nav-background-color);
   .navigation_bar__logo {
     width: 15rem;
   }
@@ -14,6 +12,14 @@
       transform: scale(1.17);
       font-weight: 400;
       transition: all 0.15s;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    top: -6.2rem;
+    transition: top 0.5s ease;
+    &:hover {
+      top: 0;
     }
   }
 }

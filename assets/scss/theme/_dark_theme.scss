@@ -2,5 +2,8 @@ $dark-theme: (
   background-color: #12181b,
   text-color: $white,
   toggle-image-name: "sun-fill.svg",
+  toggle-image-fill-color: invert(100%) sepia(0%) saturate(4371%)
+    hue-rotate(274deg) brightness(106%) contrast(102%),
   card-body-color: #b2becd,
+  nav-background-color: #2a2e35,
 );

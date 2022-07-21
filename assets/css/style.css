@@ -3,6 +3,7 @@ body.light-theme {
   --theme-background-color: #dbe1e8;
   --theme-text-color: #000;
   --card-body-color: #fff;
+  --theme-nav-background-color: #fff;
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   transition: all 0.5s;
@@ -10,6 +11,7 @@ body.light-theme {
 
 body.light-theme #toggle_dark_light_mode {
   background-image: url("../img/moon-stars-fill.svg");
+  filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
@@ -24,12 +26,14 @@ body.light-theme #toggle_dark_light_mode {
     --theme-background-color: #dbe1e8;
     --theme-text-color: #000;
     --card-body-color: #fff;
+    --theme-nav-background-color: #fff;
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
     transition: all 0.5s;
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/moon-stars-fill.svg");
+    filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
@@ -44,6 +48,7 @@ body.dark-theme {
   --theme-background-color: #12181b;
   --theme-text-color: #fff;
   --card-body-color: #b2becd;
+  --theme-nav-background-color: #2a2e35;
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   transition: all 0.5s;
@@ -51,6 +56,7 @@ body.dark-theme {
 
 body.dark-theme #toggle_dark_light_mode {
   background-image: url("../img/sun-fill.svg");
+  filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
@@ -65,12 +71,14 @@ body.dark-theme #toggle_dark_light_mode {
     --theme-background-color: #12181b;
     --theme-text-color: #fff;
     --card-body-color: #b2becd;
+    --theme-nav-background-color: #2a2e35;
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
     transition: all 0.5s;
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/sun-fill.svg");
+    filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
@@ -189,8 +197,7 @@ form.row {
 }
 
 .navigation_bar {
-  background-image: url("../img/navigation-bar-background-image.jpg");
-  background-size: cover;
+  background-color: var(--theme-nav-background-color);
 }
 
 .navigation_bar .navigation_bar__logo {
@@ -207,6 +214,16 @@ form.row {
   transform: scale(1.17);
   font-weight: 400;
   transition: all 0.15s;
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation_bar {
+    top: -6.2rem;
+    transition: top 0.5s ease;
+  }
+  .navigation_bar:hover {
+    top: 0;
+  }
 }
 
 #toggle_dark_light_mode {
