@@ -1,20 +1,6 @@
-$dark-theme-background-color: #12181b;
-$dark-theme-text-color: white;
-
-@mixin dark-theme {
-  @include theme(
-    $dark-theme-background-color,
-    $dark-theme-text-color,
-    "sun-fill.svg"
-  );
-}
-
-body.dark-theme {
-  @include dark-theme;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    @include dark-theme;
-  }
-}
+$dark-theme: (
+  background-color: #12181b,
+  text-color: $white,
+  toggle-image-name: "sun-fill.svg",
+  card-body-color: #b2becd,
+);

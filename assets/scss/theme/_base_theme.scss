@@ -1,10 +1,16 @@
+$themes: (
+  light: $light-theme,
+  dark: $dark-theme,
+);
+
 @mixin theme-transition {
   transition: all 0.5s;
 }
 
-@mixin update-root-colors($background-color, $text-color) {
-  --theme-background-color: #{$background-color};
-  --theme-text-color: #{$text-color};
+@mixin update-base-colors($theme-map) {
+  --theme-background-color: #{map-get($theme-map, background-color)};
+  --theme-text-color: #{map-get($theme-map, text-color)};
+  --card-body-color: #{map-get($theme-map, card-body-color)};
 }
 
 @mixin update-toggle-image($toggle-image-name) {
@@ -20,10 +26,22 @@
   }
 }
 
-@mixin theme($background-color, $text-color, $toggle-image-name) {
-  @include update-root-colors($background-color, $text-color);
-  @include update-toggle-image($toggle-image-name);
+@mixin theme_from($theme-map) {
+  @include update-base-colors($theme-map);
+  @include update-toggle-image(map-get($theme-map, toggle-image-name));
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
   @include theme-transition;
+}
+
+@each $name, $theme-map in $themes {
+  body.#{$name}-theme {
+    @include theme_from($theme-map);
+  }
+
+  @media (prefers-color-scheme: $name) {
+    body {
+      @include theme_from($theme-map);
+    }
+  }
 }
