@@ -7,7 +7,7 @@ body.light-theme {
   --theme-toggle-image-fill-color: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 body.light-theme #toggle_dark_light_mode {
@@ -19,7 +19,7 @@ body.light-theme #toggle_dark_light_mode {
   border: none;
   width: 3.5rem;
   height: 3.5rem;
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,7 +31,7 @@ body.light-theme #toggle_dark_light_mode {
     --theme-toggle-image-fill-color: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/moon-stars-fill.svg");
@@ -42,7 +42,7 @@ body.light-theme #toggle_dark_light_mode {
     border: none;
     width: 3.5rem;
     height: 3.5rem;
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
 }
 
@@ -54,7 +54,7 @@ body.dark-theme {
   --theme-toggle-image-fill-color: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 body.dark-theme #toggle_dark_light_mode {
@@ -66,7 +66,7 @@ body.dark-theme #toggle_dark_light_mode {
   border: none;
   width: 3.5rem;
   height: 3.5rem;
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,7 +78,7 @@ body.dark-theme #toggle_dark_light_mode {
     --theme-toggle-image-fill-color: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
     background-color: var(--theme-background-color);
     color: var(--theme-text-color);
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/sun-fill.svg");
@@ -89,7 +89,7 @@ body.dark-theme #toggle_dark_light_mode {
     border: none;
     width: 3.5rem;
     height: 3.5rem;
-    transition: all 0.5s;
+    transition: all 0.25s;
   }
 }
 
@@ -248,7 +248,7 @@ form.row {
 @media only screen and (min-width: 992px) {
   .navigation_bar {
     top: -6.2rem;
-    transition: top 0.5s ease;
+    transition: top 0.25s ease;
   }
   .navigation_bar:hover {
     top: 0;
@@ -308,6 +308,13 @@ footer .blockquote-footer {
   }
   footer .row {
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .latest-lesson-container {
+    display: flex;
+    align-items: stretch;
   }
 }
 

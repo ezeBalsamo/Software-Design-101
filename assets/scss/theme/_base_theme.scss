@@ -4,7 +4,7 @@ $themes: (
 );
 
 @mixin theme-transition {
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 
 @mixin update-base-colors($theme-map) {
