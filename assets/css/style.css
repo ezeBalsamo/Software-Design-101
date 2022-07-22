@@ -226,6 +226,8 @@ form.row {
 }
 
 .navigation_bar {
+  --bs-navbar-color: var(--theme-text-color);
+  --bs-navbar-toggler-border-color: var(--theme-nav-background-color);
   background-color: var(--theme-nav-background-color);
 }
 
