@@ -1,10 +1,11 @@
 .btn-submit {
-    @include fluid-font-size-typed(xs);
-    border: none;
-    border-radius: 1rem;
-    background: linear-gradient(to top, $dodger-blue, $light-blue);
-    color: $white;
-    &:hover {
-        background: linear-gradient(to bottom, $dodger-blue, $light-blue);
-    }
+  @include fluid-font-size-typed(xs);
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(to top, $dodger-blue, $light-blue);
+  color: $white;
+  &:hover {
+    color: $black;
+    background: linear-gradient(to bottom, $dodger-blue, $light-blue);
+  }
 }
