@@ -1,0 +1,19 @@
+.card {
+  background-color: var(--card-body-color);
+}
+
+.animated-card {
+  transform: translateY(0);
+  transition: transform 0.3s;
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.card-rounded-corners {
+  border-radius: 0.75rem;
+}
+
+.card-shadow {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 30, 84, 0.12);
+}

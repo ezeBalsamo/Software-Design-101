@@ -1,14 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+body.light-theme {
+  --theme-background-color: #dbe1e8;
+  --theme-text-color: #000;
+  --card-body-color: #fff;
+  --theme-nav-background-color: #fff;
+  --theme-toggle-image-fill-color: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.25s;
+}
+
+body.light-theme #toggle_dark_light_mode {
+  background-image: url("../img/moon-stars-fill.svg");
+  filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.25s;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --theme-background-color: #dbe1e8;
+    --theme-text-color: #000;
+    --card-body-color: #fff;
+    --theme-nav-background-color: #fff;
+    --theme-toggle-image-fill-color: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.25s;
+  }
+  body #toggle_dark_light_mode {
+    background-image: url("../img/moon-stars-fill.svg");
+    filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 0.25s;
+  }
+}
+
+body.dark-theme {
+  --theme-background-color: #12181b;
+  --theme-text-color: #fff;
+  --card-body-color: #2a2e35;
+  --theme-nav-background-color: #2a2e35;
+  --theme-toggle-image-fill-color: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  transition: all 0.25s;
+}
+
+body.dark-theme #toggle_dark_light_mode {
+  background-image: url("../img/sun-fill.svg");
+  filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.25s;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --theme-background-color: #12181b;
+    --theme-text-color: #fff;
+    --card-body-color: #2a2e35;
+    --theme-nav-background-color: #2a2e35;
+    --theme-toggle-image-fill-color: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
+    background-color: var(--theme-background-color);
+    color: var(--theme-text-color);
+    transition: all 0.25s;
+  }
+  body #toggle_dark_light_mode {
+    background-image: url("../img/sun-fill.svg");
+    filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 0.25s;
+  }
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background: #dbe1e8;
 }
 
 h1 {
@@ -72,8 +162,25 @@ form.row {
   font-style: italic;
 }
 
+.form-floating > * {
+  color: var(--theme-text-color);
+}
+
+.form-floating > *:focus {
+  color: var(--theme-text-color);
+  background-color: var(--card-body-color);
+}
+
+.form-floating > textarea {
+  background-color: var(--card-body-color);
+}
+
 .form-floating > textarea.form-control {
   height: 15vh;
+}
+
+.form-floating > input {
+  background-color: var(--card-body-color);
 }
 
 .btn-submit {
@@ -85,12 +192,43 @@ form.row {
 }
 
 .btn-submit:hover {
+  color: #000;
   background: linear-gradient(to bottom, #2e76f1, #8dd5f1);
 }
 
+.card {
+  background-color: var(--card-body-color);
+}
+
+.animated-card {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.animated-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.card-rounded-corners {
+  border-radius: 0.75rem;
+}
+
+.card-shadow {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 30, 84, 0.12);
+}
+
+.accordion-item {
+  --bs-accordion-color: var(--theme-text-color);
+}
+
+.accordion-button {
+  --bs-accordion-btn-color: var(--theme-text-color);
+}
+
 .navigation_bar {
-  background-image: url("../img/navigation-bar-background-image.jpg");
-  background-size: cover;
+  --bs-navbar-color: var(--theme-text-color);
+  --bs-navbar-toggler-border-color: var(--theme-nav-background-color);
+  background-color: var(--theme-nav-background-color);
 }
 
 .navigation_bar .navigation_bar__logo {
@@ -99,7 +237,7 @@ form.row {
 
 .navigation_bar .navigation_bar__options a {
   font-size: clamp(1rem, 100vw, 2rem);
-  color: #000;
+  color: var(--theme-text-color);
   font-weight: 300;
 }
 
@@ -109,8 +247,24 @@ form.row {
   transition: all 0.15s;
 }
 
+@media only screen and (min-width: 992px) {
+  .navigation_bar {
+    top: -6.2rem;
+    transition: top 0.25s ease;
+  }
+  .navigation_bar:hover {
+    top: 0;
+  }
+}
+
 #toggle_dark_light_mode {
   cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  filter: var(--theme-toggle-image-fill-color);
 }
 
 @keyframes opacity {
@@ -159,9 +313,16 @@ footer .blockquote-footer {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .latest-lesson-container {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
 .article-link {
-  color: #000;
-  background-color: #dbe1e8;
+  color: var(--theme-text-color);
+  background-color: var(--theme-background-color);
   border: none;
 }
 
@@ -184,6 +345,11 @@ footer .blockquote-footer {
   width: 10rem;
 }
 
+.lesson-rounded-top {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
 .manifesto-quote {
   padding-left: 1rem;
   font-weight: 300;
@@ -201,6 +367,10 @@ footer .blockquote-footer {
 
 .black-blockquote-border {
   border-left-color: #000;
+}
+
+#manifestoAccordion {
+  --bs-accordion-bg: var(--card-body-color);
 }
 
 .contact_presentation {

@@ -1,0 +1,57 @@
+$themes: (
+  light: $light-theme,
+  dark: $dark-theme,
+);
+
+@mixin theme-transition {
+  transition: all 0.25s;
+}
+
+@mixin update-base-colors($theme-map) {
+  --theme-background-color: #{map-get($theme-map, background-color)};
+  --theme-text-color: #{map-get($theme-map, text-color)};
+  --card-body-color: #{map-get($theme-map, card-body-color)};
+  --theme-nav-background-color: #{map-get($theme-map, nav-background-color)};
+  --theme-toggle-image-fill-color: #{map-get(
+      $theme-map,
+      toggle-image-fill-color
+    )};
+}
+
+@mixin update-toggle-image($theme-map) {
+  #toggle_dark_light_mode {
+    background-image: url("../img/#{map-get($theme-map, toggle-image-name)}");
+    filter: map-get($theme-map, toggle-image-fill-color);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    @include theme-transition;
+  }
+}
+
+@mixin navbar-toggler-icon($theme-map) {
+  filter: map-get($theme-map, toggle-image-fill-color);
+}
+
+@mixin theme_from($theme-map) {
+  @include update-base-colors($theme-map);
+  @include update-toggle-image($theme-map);
+  background-color: var(--theme-background-color);
+  color: var(--theme-text-color);
+  @include theme-transition;
+}
+
+@each $name, $theme-map in $themes {
+  body.#{$name}-theme {
+    @include theme_from($theme-map);
+  }
+
+  @media (prefers-color-scheme: $name) {
+    body {
+      @include theme_from($theme-map);
+    }
+  }
+}

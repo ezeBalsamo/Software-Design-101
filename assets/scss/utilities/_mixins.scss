@@ -1,4 +1,9 @@
 @mixin fluid-font-size-typed($font-size-type) {
-    $max-font-size: map-get($max-font-size-by-type, $font-size-type);
-    font-size: clamp($max-font-size / 2, 100vw, $max-font-size);
+  $max-font-size: map-get($max-font-size-by-type, $font-size-type);
+  font-size: clamp($max-font-size / 2, 100vw, $max-font-size);
+}
+
+@mixin border-top-radius($measure) {
+  border-top-left-radius: $measure;
+  border-top-right-radius: $measure;
 }

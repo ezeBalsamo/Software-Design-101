@@ -1,23 +1,37 @@
 .navigation_bar {
-    background-image: url('../img/navigation-bar-background-image.jpg');
-    background-size: cover;
+  --bs-navbar-color: var(--theme-text-color);
+  --bs-navbar-toggler-border-color: var(--theme-nav-background-color);
+  background-color: var(--theme-nav-background-color);
+  .navigation_bar__logo {
+    width: 15rem;
+  }
 
-    .navigation_bar__logo {
-        width: 15rem;
+  .navigation_bar__options a {
+    @include fluid-font-size-typed(md);
+    color: var(--theme-text-color);
+    font-weight: $light-wright;
+    &:hover {
+      transform: scale(1.17);
+      font-weight: 400;
+      transition: all 0.15s;
     }
-    
-    .navigation_bar__options a {
-        @include fluid-font-size-typed(md);
-        color: $black;
-        font-weight: $light-wright;
-        &:hover {
-            transform: scale(1.17);
-            font-weight: 400;
-            transition: all 0.15s;
-        }
+  }
+
+  @media only screen and (min-width: 992px) {
+    top: -6.2rem;
+    transition: top 0.25s ease;
+    &:hover {
+      top: 0;
     }
+  }
 }
 
 #toggle_dark_light_mode {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  filter: var(--theme-toggle-image-fill-color);
 }
