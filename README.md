@@ -6,6 +6,7 @@ A website for beginning (and not so) developers to learn about frontend, backend
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1892d8a9-e933-48eb-9911-f0e1950adc98/deploy-status?branch=release-candidate)](https://app.netlify.com/sites/software-design-101/deploys)
 ![Vercel](https://vercelbadge.vercel.app/api/ezebalsamo/software-design-101)
+![Github Pages](https://img.shields.io/github/deployments/ezeBalsamo/Software-Design-101/production?label=Github%20Pages&logo=Github%20Pages)
 [![Markdown Lint](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml)
 
 This website and its development have an educational purpose, guided by Coderhouse's [Web Development](https://www.coderhouse.com/online/desarrollo-web-online) course.
