@@ -8,6 +8,7 @@ A website for beginning (and not so) developers to learn about frontend, backend
 ![Vercel](https://vercelbadge.vercel.app/api/ezebalsamo/software-design-101)
 ![Github Pages](https://img.shields.io/github/deployments/ezeBalsamo/Software-Design-101/production?label=Github%20Pages&logo=Github%20Pages)
 [![Markdown Lint](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/ezeBalsamo/Software-Design-101/actions/workflows/markdown-lint.yml)
+![License](https://img.shields.io/github/license/ezeBalsamo/Software-Design-101)
 
 This website and its development have an educational purpose, guided by Coderhouse's [Web Development](https://www.coderhouse.com/online/desarrollo-web-online) course.
 
