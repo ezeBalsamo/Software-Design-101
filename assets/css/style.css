@@ -226,6 +226,10 @@ form.row {
   --bs-accordion-btn-color: var(--theme-text-color);
 }
 
+.accordion-button::after {
+  filter: var(--theme-toggle-image-fill-color);
+}
+
 .navigation_bar {
   --bs-navbar-color: var(--theme-text-color);
   --bs-navbar-toggler-border-color: var(--theme-nav-background-color);
