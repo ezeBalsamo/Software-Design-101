@@ -8,6 +8,7 @@ form.row {
 
   & > * {
     color: var(--theme-text-color);
+    color-scheme: var(--os-color-scheme);
     &:focus {
       color: var(--theme-text-color);
       background-color: var(--card-body-color);

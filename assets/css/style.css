@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 body.light-theme {
+  --os-color-scheme: light;
   --theme-background-color: #dbe1e8;
   --theme-text-color: #000;
   --card-body-color: #fff;
@@ -24,6 +25,7 @@ body.light-theme #toggle_dark_light_mode {
 
 @media (prefers-color-scheme: light) {
   body {
+    --os-color-scheme: light;
     --theme-background-color: #dbe1e8;
     --theme-text-color: #000;
     --card-body-color: #fff;
@@ -47,6 +49,7 @@ body.light-theme #toggle_dark_light_mode {
 }
 
 body.dark-theme {
+  --os-color-scheme: dark;
   --theme-background-color: #12181b;
   --theme-text-color: #fff;
   --card-body-color: #2a2e35;
@@ -71,6 +74,7 @@ body.dark-theme #toggle_dark_light_mode {
 
 @media (prefers-color-scheme: dark) {
   body {
+    --os-color-scheme: dark;
     --theme-background-color: #12181b;
     --theme-text-color: #fff;
     --card-body-color: #2a2e35;
@@ -160,6 +164,7 @@ form.row {
 
 .form-floating > * {
   color: var(--theme-text-color);
+  color-scheme: var(--os-color-scheme);
 }
 
 .form-floating > *:focus {

@@ -7,7 +7,8 @@ $themes: (
   transition: all 0.25s;
 }
 
-@mixin update-base-colors($theme-map) {
+@mixin update-theme-dependant-variables($color-scheme-name, $theme-map) {
+  --os-color-scheme: #{$color-scheme-name};
   --theme-background-color: #{map-get($theme-map, background-color)};
   --theme-text-color: #{map-get($theme-map, text-color)};
   --card-body-color: #{map-get($theme-map, card-body-color)};
@@ -36,8 +37,8 @@ $themes: (
   filter: map-get($theme-map, toggle-image-fill-color);
 }
 
-@mixin theme_from($theme-map) {
-  @include update-base-colors($theme-map);
+@mixin theme_from($color-scheme-name, $theme-map) {
+  @include update-theme-dependant-variables($color-scheme-name, $theme-map);
   @include update-toggle-image($theme-map);
   background-color: var(--theme-background-color);
   color: var(--theme-text-color);
@@ -46,12 +47,12 @@ $themes: (
 
 @each $name, $theme-map in $themes {
   body.#{$name}-theme {
-    @include theme_from($theme-map);
+    @include theme_from($name, $theme-map);
   }
 
   @media (prefers-color-scheme: $name) {
     body {
-      @include theme_from($theme-map);
+      @include theme_from($name, $theme-map);
     }
   }
 }
