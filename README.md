@@ -14,6 +14,10 @@ This website and its development have an educational purpose, guided by Coderhou
 
 ## Quick links
 
+- [**Explore the docs**](docs/)
+- [Report a defect](https://github.com/ezeBalsamo/Software-Design-101/issues/new?labels=Type%3A+Defect)
+- [Request a feature](https://github.com/ezeBalsamo/Software-Design-101/issues/new?labels=Type%3A+Feature)
+
 ### Wireframes Web
 
 - [Index](https://wireframe.cc/W5e0Rn)
