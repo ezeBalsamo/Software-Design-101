@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 body.light-theme {
+  --os-color-scheme: light;
   --theme-background-color: #dbe1e8;
   --theme-text-color: #000;
   --card-body-color: #fff;
@@ -12,18 +13,19 @@ body.light-theme {
 
 body.light-theme #toggle_dark_light_mode {
   background-image: url("../img/moon-stars-fill.svg");
-  filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
   border: none;
   width: 3.5rem;
   height: 3.5rem;
+  filter: var(--theme-toggle-image-fill-color);
   transition: all 0.25s;
 }
 
 @media (prefers-color-scheme: light) {
   body {
+    --os-color-scheme: light;
     --theme-background-color: #dbe1e8;
     --theme-text-color: #000;
     --card-body-color: #fff;
@@ -35,18 +37,19 @@ body.light-theme #toggle_dark_light_mode {
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/moon-stars-fill.svg");
-    filter: invert(0%) sepia(3%) saturate(4%) hue-rotate(319deg) brightness(92%) contrast(100%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
     border: none;
     width: 3.5rem;
     height: 3.5rem;
+    filter: var(--theme-toggle-image-fill-color);
     transition: all 0.25s;
   }
 }
 
 body.dark-theme {
+  --os-color-scheme: dark;
   --theme-background-color: #12181b;
   --theme-text-color: #fff;
   --card-body-color: #2a2e35;
@@ -59,18 +62,19 @@ body.dark-theme {
 
 body.dark-theme #toggle_dark_light_mode {
   background-image: url("../img/sun-fill.svg");
-  filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: cover;
   border: none;
   width: 3.5rem;
   height: 3.5rem;
+  filter: var(--theme-toggle-image-fill-color);
   transition: all 0.25s;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
+    --os-color-scheme: dark;
     --theme-background-color: #12181b;
     --theme-text-color: #fff;
     --card-body-color: #2a2e35;
@@ -82,13 +86,13 @@ body.dark-theme #toggle_dark_light_mode {
   }
   body #toggle_dark_light_mode {
     background-image: url("../img/sun-fill.svg");
-    filter: invert(100%) sepia(0%) saturate(4371%) hue-rotate(274deg) brightness(106%) contrast(102%);
     background-repeat: no-repeat;
     background-color: transparent;
     background-size: cover;
     border: none;
     width: 3.5rem;
     height: 3.5rem;
+    filter: var(--theme-toggle-image-fill-color);
     transition: all 0.25s;
   }
 }
@@ -128,10 +132,6 @@ blockquote,
   font-weight: 600;
 }
 
-.vh-25 {
-  height: 25vh;
-}
-
 .fs-inherit {
   font-size: inherit;
 }
@@ -164,6 +164,7 @@ form.row {
 
 .form-floating > * {
   color: var(--theme-text-color);
+  color-scheme: var(--os-color-scheme);
 }
 
 .form-floating > *:focus {
@@ -223,6 +224,10 @@ form.row {
 
 .accordion-button {
   --bs-accordion-btn-color: var(--theme-text-color);
+}
+
+.accordion-button::after {
+  filter: var(--theme-toggle-image-fill-color);
 }
 
 .navigation_bar {
@@ -348,6 +353,12 @@ footer .blockquote-footer {
 .lesson-rounded-top {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .spotify-player {
+    height: 35vh;
+  }
 }
 
 .manifesto-quote {

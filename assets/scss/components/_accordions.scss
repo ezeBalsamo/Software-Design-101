@@ -4,4 +4,7 @@
 
 .accordion-button {
   --bs-accordion-btn-color: var(--theme-text-color);
+  &::after {
+    @include svg-icon-theme-fill-color;
+  }
 }
